@@ -1,0 +1,6 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+cordic=1
+Built-in symbols=0
+[COMPILESTATUS|.\..\..\src\register.vhd]
+FileTimeLow=30597411
+Status=Modified

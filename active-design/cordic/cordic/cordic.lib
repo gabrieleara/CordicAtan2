@@ -1,0 +1,60 @@
+timestamp=1497272847916
+
+[~A]
+ModifyID=7
+Version=74
+
+[counter]
+A/counter_arch=A/Counter_Arch 21|./../../../src/counter.vhd|14|1*5058
+BinI32/counter_arch=3*2679
+I=0*664
+I/counter_arch=I/Counter_Arch 0*6494
+M=11|0|vd0|1497272646401|./../../../src/counter.vhd|0*248*0x9b6c1057c0125b246e19f572371d7378fc69c5c8|0*577*0x23b75c12e3e89f2ef000564498faa8c2
+M/counter_arch=M/Counter_Arch 21|0|vd0|1497272777729|./../../../src/counter.vhd|0*5388*0x0f4553aaca7daa63ba1b1b628cb284c27696742a|0*6391*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/counter.vhd|4
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a1de5992eccf74581a525a50b61319db1
+Version/counter_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|a05c0a5d83eb7c004f1fc00eda9ab4206c508ab48b8e3f3d8cc3bf287fbccb2fb99f515b5fed4536e3ed668339d78c1e
+
+[fulladder]
+A/fulladder_arch=A/FullAdder_Arch 21|./../../../src/fulladder.vhd|14|1*3088
+BinI32/fulladder_arch=3*1676
+I=0*1452
+I/fulladder_arch=I/FullAdder_Arch 0*4956
+M=11|0|vd0|1497272646463|./../../../src/fulladder.vhd|0*1067*0x537ec417d1a9e02e550be5e4e7e08946b1521c4b|0*1361*0x23b75c12e3e89f2ef000564498faa8c2
+M/fulladder_arch=M/FullAdder_Arch 21|0|vd0|1497272739372|./../../../src/fulladder.vhd|0*4150*0x865ebfd711b923c67df7b75939c854f0815b01c9|0*4415*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/fulladder.vhd|4
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a09c3c1b02646f7ffcd5d6cb5b8d6e21c1
+Version/fulladder_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|a86fc5bcef2a9dd890df7765c83a6818f25916c65ad04615a551c485f3c58d589cae271f79036bfea1aa8c0b4c392a14
+
+[gregister]
+A/gregister_arch=A/GRegister_Arch 21|./../../../src/gregister.vhd|18|1*9260
+BinI32/gregister_arch=3*3124
+I=0*2332
+I/gregister_arch=I/GRegister_Arch 0*6784
+M=11|0|vd0|1497272646526|./../../../src/gregister.vhd|0*1903*0xac33f7edb6af57f3ab8cb740205eee2484a092b3|0*2241*0x23b75c12e3e89f2ef000564498faa8c2
+M/gregister_arch=M/GRegister_Arch 21|0|vd0|1497272799484|./../../../src/gregister.vhd|0*2533*0xec9971c813cf05399278a75bb76c22ccf641eca4|0*2831*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/gregister.vhd|8
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|35ed6936f9c1e9410d13482414fcc097df31f63967ce5a0c454382956ff093b3299505c5e169fc1c4e3dff34e1d59f42
+Version/gregister_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|e69c0791e80739867a92d1bb24cb0151bebcf521a4eac8567424f7537fa82e10c6c7f4084074992893defaac49610632
+
+[ripplecarryadder]
+A/ripplecarryadder_arch=A/RippleCarryAdder_Arch 21|./../../../src/ripplecarryadder.vhd|15|1*10378
+BinI32/ripplecarryadder_arch=3*3797
+I=0*3942
+I/ripplecarryadder_arch=I/RippleCarryAdder_Arch 0*8192
+M=11|0|vd0|1497272646714|./../../../src/ripplecarryadder.vhd|0*3426*0x676d9a15c42e378d8f21148702fc7f74677d01f8|0*3837*0x23b75c12e3e89f2ef000564498faa8c2
+M/ripplecarryadder_arch=M/RippleCarryAdder_Arch 21|0|vd0|1497272847824|./../../../src/ripplecarryadder.vhd|0*7000*0x1324169347520f890f6e40d95793b83e0bfa1e11|0*8062*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/ripplecarryadder.vhd|4
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|21c6272b9d2a224c962f2b2fe72a6fb214b7a94b34f90f2475bf18818d7b573381fb425bdde7da8fc5b257c65f35bd19
+Version/ripplecarryadder_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|21c6272b9d2a224c962f2b2fe72a6fb2e09b464bb505196ce6cb5e44c2c547743d011b773700af2031d56525309b2768
+
+[~MFT]
+0=3|0cordic.mgf|8192|864
+1=1|1cordic.mgf|10378|5324
+3=1|3cordic.mgf|3797|2349
+
+[~U]
+counter=Counter 11|0*0|
+fulladder=FullAdder 11|0*863|
+gregister=GRegister 11|0*1653|
+ripplecarryadder=RippleCarryAdder 11|0*3156|

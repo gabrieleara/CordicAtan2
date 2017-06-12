@@ -1,0 +1,43 @@
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# Error: COMP96_0019: ../../../src/counter.vhd : (36, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: ../../../src/counter.vhd : (36, 3): Design unit declaration expected.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Error: COMP96_0016: ../../../src/gregister.vhd : (1, 1): Design unit declaration expected.
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
+# Compile Entity "RippleCarryAdder"
+# Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
+# Error: COMP96_0019: ../../../src/ripplecarryadder.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0015: ../../../src/ripplecarryadder.vhd : (43, 8): ';' expected.
+# Error: COMP96_0016: ../../../src/ripplecarryadder.vhd : (43, 17): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# Error: COMP96_0019: ../../../src/counter.vhd : (39, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: ../../../src/counter.vhd : (39, 3): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# Error: COMP96_0019: ../../../src/counter.vhd : (64, 2): Keyword 'end' expected.
+# Error: COMP96_0016: ../../../src/counter.vhd : (64, 3): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
