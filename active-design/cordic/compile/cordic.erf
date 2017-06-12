@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd" 
+MESSAGE "Compile Entity "RippleCarryAdder"" 
+MESSAGE "Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
