@@ -25,13 +25,13 @@ sign = inB < 0; % equal to the msb of inb
 if sign == 0
     atan = cordicLut(1);  % cordicLut(0)
     
-    tempA = + bitsra(inB, shiftLut(1)); % shiftLut(0)
-    tempB = - bitsra(inA, shiftLut(1)); % shiftLut(0)
+    tempA = + inB;
+    tempB = - inA;
 else
     atan = -cordicLut(1); % cordicLut(0)
     
-    tempA = - inB; % shiftLut(0)
-    tempB = + inA; % shiftLut(0)
+    tempA = - inB;
+    tempB = + inA;
 end
 
 inA = tempA;

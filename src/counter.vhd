@@ -55,10 +55,10 @@ begin
 	registerInstance : GRegister
 		generic map(size => size)
 		port map (
-			data	=> data,
 			clock	=> clock,
-			value	=> loopback,
-			reset	=> reset
+			reset	=> reset,
+			data	=> data,
+			value	=> loopback
 		);
 
 	-- The output is the value in the loopback wire

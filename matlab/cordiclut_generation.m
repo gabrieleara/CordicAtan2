@@ -1,4 +1,8 @@
-function lut = cordiclut_generation(size, fixed, filename)
+function lut = cordiclut_generation(size, fixed, bitlen)
+
+% ---------------------------------
+%        Arguments checking
+% ---------------------------------
 
 if nargin < 1 || size < 8
     size = 8;
@@ -7,6 +11,10 @@ end
 if nargin < 2
     fixed = false;
 end
+
+% ---------------------------------
+%        Lut creation
+% ---------------------------------
 
 lut = zeros(size, 1);
 
@@ -21,29 +29,11 @@ end
 % ---------------------------------
 
 if fixed
-    lut = fixed_integer(lut);
-end
-
-% ---------------------------------
-%      Optional File Printing
-% ---------------------------------
-
-if nargin >= 3
-    if fixed
-        toprint = string(bin(lut));
+    if nargin < 3
+        lut = fixed_integer(lut, true);
     else
-        toprint = strings(size, 1);
-        for i = 1:size
-            toprint(i) = num2str(lut(i), '%f');
-        end
+        lut = fixed_integer(lut, true, bitlen);
     end
-    
-    fid = fopen(filename, 'w');
-    fprintf(fid, '%s,', toprint(1:size-1));
-    fprintf(fid, '%s\n', toprint(size));
-    fclose(fid);
-
-    % dlmwrite(filename, toprint(2:length(blut),:), '-append') ;
 end
 
 
