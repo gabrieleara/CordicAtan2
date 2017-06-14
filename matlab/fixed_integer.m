@@ -5,7 +5,7 @@ function [ val ] = fixed_integer(v, out, len)
 % ---------------------------------
 
 if nargin < 1
-    error("Must supply at least the value");
+    error('Must supply at least the value');
 elseif nargin < 2
     out = true;
     len = 12;

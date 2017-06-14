@@ -3,7 +3,7 @@ function [res, minA, minB, maxA, maxB] = gcordicatan2(inB, inA, cordicLut)
 LUT_SIZE = length(cordicLut);
 
 if nargin < 3
-    error("The cordiclut must be supplied along with ina and inb");
+    error('The cordiclut must be supplied along with ina and inb');
 end
 
 % ---------------------------------
