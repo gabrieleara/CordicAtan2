@@ -41,7 +41,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=arithmeticshifter_tb|ArithmeticShifter_TB_Arch|0 
+HierarchyInformation=shiftadjuster_tb|ShiftAdjuster_TB_Arch|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -51,6 +51,11 @@ Selected=
 /..\..\..\src\arithmeticshifter.vhd=-1
 /..\..\..\src\muxwithoffset.vhd=-1
 /..\..\..\test\shifter_tb.vhd=-1
+/..\..\..\src\accumulator.vhd=-1
+/..\..\..\src\addersubtractor.vhd=-1
+/..\..\..\src\rotator.vhd=-1
+/..\..\..\src\shiftadjuster.vhd=-1
+/..\..\..\test\asjuster_tb.vhd=-1
 
 [Files.Data]
 .\..\..\src\fulladder.vhd=VHDL Source Code
@@ -58,4 +63,9 @@ Selected=
 .\..\..\src\arithmeticshifter.vhd=VHDL Source Code
 .\..\..\src\muxwithoffset.vhd=VHDL Source Code
 .\..\..\test\shifter_tb.vhd=VHDL Source Code
+.\..\..\src\accumulator.vhd=VHDL Source Code
+.\..\..\src\addersubtractor.vhd=VHDL Source Code
+.\..\..\src\rotator.vhd=VHDL Source Code
+.\..\..\src\shiftadjuster.vhd=VHDL Source Code
+.\..\..\test\asjuster_tb.vhd=VHDL Source Code
 

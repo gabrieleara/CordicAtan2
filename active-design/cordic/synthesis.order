@@ -3,3 +3,8 @@ i<>.\..\..\src\gregister.vhd
 i<>.\..\..\src\arithmeticshifter.vhd
 i<>.\..\..\src\muxwithoffset.vhd
 i<>.\..\..\test\shifter_tb.vhd
+i<>.\..\..\src\accumulator.vhd
+i<>.\..\..\src\addersubtractor.vhd
+i<>.\..\..\src\rotator.vhd
+i<>.\..\..\src\shiftadjuster.vhd
+i<>.\..\..\test\asjuster_tb.vhd

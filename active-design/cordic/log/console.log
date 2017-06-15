@@ -1,19 +1,224 @@
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/rotator.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# Error: COMP96_0093: ../../../src/rotator.vhd : (64, 31): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (68, 2): Unknown identifier "addData".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (68, 2): Cannot find object declaration.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (78, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (78, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (78, 4): Undefined type of expression.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (98, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (98, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (98, 4): Undefined type of expression.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/rotator.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# Error: COMP96_0078: ../../../src/rotator.vhd : (68, 2): Unknown identifier "addData".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (68, 2): Cannot find object declaration.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (78, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (78, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (78, 4): Undefined type of expression.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (98, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (98, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (98, 4): Undefined type of expression.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/rotator.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# Error: COMP96_0078: ../../../src/rotator.vhd : (78, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (78, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (78, 4): Undefined type of expression.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (98, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (98, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (98, 4): Undefined type of expression.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/rotator.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# Error: COMP96_0078: ../../../src/rotator.vhd : (76, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (76, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (76, 4): Undefined type of expression.
+# Error: COMP96_0078: ../../../src/rotator.vhd : (96, 14): Unknown identifier "shift".
+# Error: COMP96_0133: ../../../src/rotator.vhd : (96, 14): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/rotator.vhd : (96, 4): Undefined type of expression.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/rotator.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd $dsn/../../src/accumulator.vhd $dsn/../../src/addersubtractor.vhd $dsn/../../src/rotator.vhd $dsn/../../src/shiftadjuster.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd
+# Compile Entity "Accumulator"
+# Compile Architecture "Accumulator_Arch" of Entity "Accumulator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd
+# Compile Entity "AdderSubtractor"
+# Compile Architecture "AdderSubtractor_Arch" of Entity "AdderSubtractor"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0078: ../../../test/asjuster_tb.vhd : (34, 38): Unknown identifier "SIZE".
+# Error: COMP96_0133: ../../../test/asjuster_tb.vhd : (34, 38): Cannot find object declaration.
+# Error: COMP96_0094: ../../../test/asjuster_tb.vhd : (34, 38): Locally static expression is required in the range definition.
+# Error: COMP96_0118: ../../../test/asjuster_tb.vhd : (47, 13): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0118: ../../../test/asjuster_tb.vhd : (47, 13): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0269: ../../../test/asjuster_tb.vhd : (47, 29): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0100: ../../../test/asjuster_tb.vhd : (47, 4): Actual parameter type in port map does not match the type of the formal port 'inA'.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0269: ../../../test/asjuster_tb.vhd : (47, 30): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0149: ../../../test/asjuster_tb.vhd : (47, 39): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0149: ../../../test/asjuster_tb.vhd : (47, 39): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0149: ../../../test/asjuster_tb.vhd : (47, 46): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0078: ../../../test/asjuster_tb.vhd : (47, 12): Unknown identifier "to_std_ulogic_vector".
+# Error: COMP96_0133: ../../../test/asjuster_tb.vhd : (47, 12): Cannot find object declaration.
+# Error: COMP96_0289: ../../../test/asjuster_tb.vhd : (47, 12): Prefix of index must be an array.
+# Error: COMP96_0104: ../../../test/asjuster_tb.vhd : (47, 4): Undefined type of expression.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0149: ../../../test/asjuster_tb.vhd : (47, 46): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0134: ../../../test/asjuster_tb.vhd : (52, 21): Cannot find component declaration.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
 # ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'ArithmeticShifter_TB_Arch' of entity 'ArithmeticShifter_TB' not found in library 'cordic'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7111 kB (elbread=1280 elab2=5680 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  17:44, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# 4 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd $dsn/../../src/accumulator.vhd $dsn/../../src/addersubtractor.vhd $dsn/../../src/rotator.vhd $dsn/../../src/shiftadjuster.vhd $dsn/../../test/asjuster_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
-# Error: COMP96_0001: Cannot find source file "E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd".
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
 # Compile Entity "FullAdder"
 # Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
 # Compile Entity "GRegister"
 # Compile Architecture "GRegister_Arch" of Entity "GRegister"
-# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
-# Error: COMP96_0001: Cannot find source file "E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd".
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
 # Compile Entity "ArithmeticShifter"
 # Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
@@ -23,8 +228,25 @@ acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fu
 # File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
 # Compile Entity "ArithmeticShifter_TB"
 # Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.5 [s]
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd
+# Compile Entity "Accumulator"
+# Compile Architecture "Accumulator_Arch" of Entity "Accumulator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd
+# Compile Entity "AdderSubtractor"
+# Compile Architecture "AdderSubtractor_Arch" of Entity "AdderSubtractor"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Error: COMP96_0078: ../../../test/asjuster_tb.vhd : (61, 3): Unknown identifier "reset".
+# Error: COMP96_0133: ../../../test/asjuster_tb.vhd : (61, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd $dsn/../../src/accumulator.vhd $dsn/../../src/addersubtractor.vhd $dsn/../../src/rotator.vhd $dsn/../../src/shiftadjuster.vhd $dsn/../../test/asjuster_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
 # Compile Entity "FullAdder"
@@ -41,10 +263,25 @@ acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/
 # File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
 # Compile Entity "ArithmeticShifter_TB"
 # Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd
+# Compile Entity "Accumulator"
+# Compile Architecture "Accumulator_Arch" of Entity "Accumulator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd
+# Compile Entity "AdderSubtractor"
+# Compile Architecture "AdderSubtractor_Arch" of Entity "AdderSubtractor"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
@@ -64,38 +301,187 @@ asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShift
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7238 kB (elbread=1280 elab2=5807 kernel=150 sdf=0)
+# Allocation: Simulator allocated 7111 kB (elbread=1280 elab2=5680 kernel=150 sdf=0)
 # KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
-#  15:01, giovedì 15 giugno 2017
+#  17:48, giovedì 15 giugno 2017
 #  Simulation has been initialized
-# 2 signal(s) traced.
 # Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
-# 3 signal(s) traced.
-run 2000000 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__1/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__2/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__3/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__4/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__5/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__6/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__7/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__8/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__9/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__10/mux,  Process: selection.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__11/mux,  Process: selection.
-# KERNEL: stopped at time: 2 ms
-run 2000000 ns
-# KERNEL: stopped at time: 4 ms
+# 5 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7115 kB (elbread=1280 elab2=5684 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  17:51, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 5 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/shiftadjuster.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd $dsn/../../src/accumulator.vhd $dsn/../../src/addersubtractor.vhd $dsn/../../src/rotator.vhd $dsn/../../src/shiftadjuster.vhd $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd
+# Compile Entity "Accumulator"
+# Compile Architecture "Accumulator_Arch" of Entity "Accumulator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd
+# Compile Entity "AdderSubtractor"
+# Compile Architecture "AdderSubtractor_Arch" of Entity "AdderSubtractor"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7115 kB (elbread=1280 elab2=5685 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  17:54, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 5 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd $dsn/../../src/accumulator.vhd $dsn/../../src/addersubtractor.vhd $dsn/../../src/rotator.vhd $dsn/../../src/shiftadjuster.vhd $dsn/../../test/asjuster_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd
+# Compile Entity "Accumulator"
+# Compile Architecture "Accumulator_Arch" of Entity "Accumulator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd
+# Compile Entity "AdderSubtractor"
+# Compile Architecture "AdderSubtractor_Arch" of Entity "AdderSubtractor"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd
+# Compile Entity "Rotator"
+# Compile Architecture "Rotator_Arch" of Entity "Rotator"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd
+# Compile Entity "ShiftAdjuster"
+# Compile Architecture "ShiftAdjuster_Arch" of Entity "ShiftAdjuster"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd
+# Compile Entity "ShiftAdjuster_TB"
+# Compile Architecture "ShiftAdjuster_TB_Arch" of Entity "ShiftAdjuster_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7115 kB (elbread=1280 elab2=5684 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  17:56, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 5 signal(s) traced.
+run
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ShiftAdjuster_TB/adjusterUnderTest,  Process: line__30.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.

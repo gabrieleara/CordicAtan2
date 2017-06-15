@@ -32,7 +32,7 @@ begin
 
 	-- When sumSub = 0 then the component performs A+B, otherwise it performs
 	-- B-A
-	actualInA = inA when sumSub == '0' else not(inA);
+	actualInA <= inA when sumSub = '0' else not(inA);
 
 	generateFullAdders: for i in 0 to size-1 generate
 

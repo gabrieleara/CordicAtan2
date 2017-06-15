@@ -3,3 +3,8 @@
 .\..\..\src\arithmeticshifter.vhd
 .\..\..\src\muxwithoffset.vhd
 .\..\..\test\shifter_tb.vhd
+.\..\..\src\accumulator.vhd
+.\..\..\src\addersubtractor.vhd
+.\..\..\src\rotator.vhd
+.\..\..\src\shiftadjuster.vhd
+.\..\..\test\asjuster_tb.vhd

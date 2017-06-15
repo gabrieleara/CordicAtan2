@@ -1,36 +1,39 @@
-Active-HDL 10.3.3559.6081  2017-06-15 15:01:21
+Active-HDL 10.3.3559.6081  2017-06-15 17:56:05
 
 Elaboration top modules:
-Architecture                  ArithmeticShifter_TB_Arch(ArithmeticShifter_TB)
+Architecture                  ShiftAdjuster_TB_Arch(ShiftAdjuster_TB)
 
 
---------------------------------------------------------------------------------------------------------------------
-Entity               | Architecture              | Library | Info | Compiler Version          | Compilation Options
---------------------------------------------------------------------------------------------------------------------
-ArithmeticShifter_TB | ArithmeticShifter_TB_Arch | cordic  |      | 10.3.3559.6081  (Windows) | -O3
-ArithmeticShifter    | ArithmeticShifter_Arch    | cordic  |      | 10.3.3559.6081  (Windows) | -O3
-MuxWithOffset        | MuxWithOffset_Arch        | cordic  |      | 10.3.3559.6081  (Windows) | -O3
---------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Entity           | Architecture          | Library | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------------------
+ShiftAdjuster_TB | ShiftAdjuster_TB_Arch | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+ShiftAdjuster    | ShiftAdjuster_Arch    | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+Accumulator      | Accumulator_Arch      | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+AdderSubtractor  | AdderSubtractor_Arch  | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+FullAdder        | FullAdder_Arch        | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+GRegister        | GRegister_Arch        | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------
-VHDL Package                                     | Library | Info | Compiler Version          | Compilation Options
---------------------------------------------------------------------------------------------------------------------
-standard                                         | std     |      |                           | <unavailable>
-TEXTIO                                           | std     |      | 10.3.3559.6081  (Windows) |  -2008
-std_logic_1164                                   | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
-NUMERIC_STD                                      | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
---------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+VHDL Package                             | Library | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------------------
+standard                                 | std     |      |                           | <unavailable>
+TEXTIO                                   | std     |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_1164                           | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
+NUMERIC_STD                              | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
+------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------
-Library                                          | Comment
---------------------------------------------------------------------------------------------------------------------
-cordic                                           | None
-ieee                                             | Standard IEEE packages library
-std                                              | Standard VHDL library
---------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Library                                  | Comment
+------------------------------------------------------------------------------------------------------------
+cordic                                   | None
+ieee                                     | Standard IEEE packages library
+std                                      | Standard VHDL library
+------------------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+Simulation Options: asim -O5 +access +r +m+ShiftAdjuster_TB ShiftAdjuster_TB ShiftAdjuster_TB_Arch
 
 
 The performance of simulation is reduced. Version Student Edition

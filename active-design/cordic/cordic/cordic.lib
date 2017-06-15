@@ -1,30 +1,52 @@
-timestamp=1497531674221
+timestamp=1497542158996
 
 [~A]
-ModifyID=35
+ModifyID=53
 Version=74
 
+[accumulator]
+A/accumulator_arch=A/Accumulator_Arch 21|./../../../src/accumulator.vhd|16|1*365516
+BinI32/accumulator_arch=3*98383
+I=0*61138
+I/accumulator_arch=I/Accumulator_Arch 0*92099
+M=11|0|vd0|1497540646602|./../../../src/accumulator.vhd|0*60650*0x55ed33a9a3326f1a9077409bf26a5707997c3739|0*61043*0x23b75c12e3e89f2ef000564498faa8c2
+M/accumulator_arch=M/Accumulator_Arch 21|0|vd0|1497542158688|./../../../src/accumulator.vhd|0*64347*0x8d4535de957a728b74766a0d8382b999247b6f3b|0*65448*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/accumulator.vhd|4
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|8f04b00cd15c5a78c9f70d8f743fd1e80f4a81e230d3baa403e5179ad877fb731068abf34e536a813d783721c2b05481
+Version/accumulator_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|d12b2ddb74d8f998212958956219a2df9b510e25ca6be1ea94ac4acbe2d89f352959c763888781ad64f4eb96481cea8a
+
+[addersubtractor]
+A/addersubtractor_arch=A/AdderSubtractor_Arch 21|./../../../src/addersubtractor.vhd|16|1*368821
+BinI32/addersubtractor_arch=3*98996
+I=0*62124
+I/addersubtractor_arch=I/AdderSubtractor_Arch 0*92395
+M=11|0|vd0|1497540646633|./../../../src/addersubtractor.vhd|0*61613*0xfe1bb08a7f0c20073127049af7dd93bba36908f2|0*62021*0x23b75c12e3e89f2ef000564498faa8c2
+M/addersubtractor_arch=M/AdderSubtractor_Arch 21|0|vd0|1497542158750|./../../../src/addersubtractor.vhd|0*65859*0x83a9c13ddfc54d0661298f346fef86444b8539f6|0*67029*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/addersubtractor.vhd|5
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|169c7fa5aaf9de8dec02ea50f641db5780090c0edf6b1f290a6fd0801e3325a6239aaf02ba189341dc731f96f865efe2
+Version/addersubtractor_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|169c7fa5aaf9de8dec02ea50f641db578a8bb777008664b63bc8f0f9e51162e0790cfd8ff9b41e656c38d7e8ec4e15f0
+
 [arithmeticshifter]
-A/arithmeticshifter_arch=A/ArithmeticShifter_Arch 21|./../../../src/arithmeticshifter.vhd|17|1*222869
-BinI32/arithmeticshifter_arch=3*60484
+A/arithmeticshifter_arch=A/ArithmeticShifter_Arch 21|./../../../src/arithmeticshifter.vhd|17|1*359367
+BinI32/arithmeticshifter_arch=3*96371
 I=0*31429
-I/arithmeticshifter_arch=I/ArithmeticShifter_Arch 0*57887
+I/arithmeticshifter_arch=I/ArithmeticShifter_Arch 0*91198
 M=11|0|vd0|1497519573036|./../../../src/arithmeticshifter.vhd|0*30890*0x931977c157eb4133d96c331048de05b88faf54f1|0*31322*0x23b75c12e3e89f2ef000564498faa8c2
-M/arithmeticshifter_arch=M/ArithmeticShifter_Arch 21|0|vd0|1497531673881|./../../../src/arithmeticshifter.vhd|0*13662*0xec7b8d161051c0c39ac5c5d14ab841a21f9c6c72|0*14317*0x20116f55b147878295aeff36dce7fc50
+M/arithmeticshifter_arch=M/ArithmeticShifter_Arch 21|0|vd0|1497542158516|./../../../src/arithmeticshifter.vhd|0*13662*0xec7b8d161051c0c39ac5c5d14ab841a21f9c6c72|0*14317*0x20116f55b147878295aeff36dce7fc50
 R=./../../../src/arithmeticshifter.vhd|5
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded14e50d69a35816a5899f694d60e6b6a0adbde16cbc3c5a99995c62583b8485b8ee
-Version/arithmeticshifter_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded14c7e346468fae0583dfb6168c99a09465c2df16fc1e245996eaf93bb3befa23af
+Version/arithmeticshifter_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded14c7e346468fae0583dfb6168c99a09465aaaf07f4f20305500ba1f541d01b92c8
 
 [arithmeticshifter_tb]
-A/arithmeticshifter_tb_arch=A/ArithmeticShifter_TB_Arch 21|./../../../test/shifter_tb.vhd|8|1*226599
-BinI32/arithmeticshifter_tb_arch=3*61718
+A/arithmeticshifter_tb_arch=A/ArithmeticShifter_TB_Arch 21|./../../../test/shifter_tb.vhd|8|1*363097
+BinI32/arithmeticshifter_tb_arch=3*97605
 I=0*15243
-I/arithmeticshifter_tb_arch=I/ArithmeticShifter_TB_Arch 0*58464
+I/arithmeticshifter_tb_arch=I/ArithmeticShifter_TB_Arch 0*91775
 M=11|0|vd0|1497519168129|./../../../test/shifter_tb.vhd|0*14910*0xd782a32749bae33088951a79a9f3ea4ba2ba2c34|0*15139*0x23b75c12e3e89f2ef000564498faa8c2
-M/arithmeticshifter_tb_arch=M/ArithmeticShifter_TB_Arch 21|0|vd0|1497531674020|./../../../test/shifter_tb.vhd|0*40495*0xbb5d970495cd8cda3ae4c266e164f29077163074|0*41653*0x20116f55b147878295aeff36dce7fc50
+M/arithmeticshifter_tb_arch=M/ArithmeticShifter_TB_Arch 21|0|vd0|1497542158639|./../../../test/shifter_tb.vhd|0*40495*0xbb5d970495cd8cda3ae4c266e164f29077163074|0*41653*0x20116f55b147878295aeff36dce7fc50
 R=./../../../test/shifter_tb.vhd|5
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded14de2ba73dd88914bfad8aed8f9413bff9171256caae459a3acfdacaace1eaf4f9
-Version/arithmeticshifter_tb_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded141c254f8e71348d94bededb68b3ee9f7040457b802bf31722f0fd45d050d43f64bf99ace16b8402e0e01059beaf3e41ab
+Version/arithmeticshifter_tb_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|740c1bce90ab4afa58ca95438a2ded141c254f8e71348d94bededb68b3ee9f7040457b802bf31722f0fd45d050d43f6433c9395cc8ee78e8064217db82845815
 
 [counter]
 A/counter_arch=A/Counter_Arch 21|./../../../src/counter.vhd|14|1*198010
@@ -38,37 +60,37 @@ Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|ec8a9ceecd40c97
 Version/counter_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|a05c0a5d83eb7c004f1fc00eda9ab4206c508ab48b8e3f3d8cc3bf287fbccb2fde815f0040e192b553f0cfc300518d0e
 
 [fulladder]
-A/fulladder_arch=A/FullAdder_Arch 21|./../../../src/fulladder.vhd|14|1*220899
-BinI32/fulladder_arch=3*59481
+A/fulladder_arch=A/FullAdder_Arch 21|./../../../src/fulladder.vhd|14|1*357397
+BinI32/fulladder_arch=3*95368
 I=0*1452
-I/fulladder_arch=I/FullAdder_Arch 0*57455
+I/fulladder_arch=I/FullAdder_Arch 0*90766
 M=11|0|vd0|1497272646463|./../../../src/fulladder.vhd|0*1067*0x537ec417d1a9e02e550be5e4e7e08946b1521c4b|0*1361*0x23b75c12e3e89f2ef000564498faa8c2
-M/fulladder_arch=M/FullAdder_Arch 21|0|vd0|1497531673631|./../../../src/fulladder.vhd|0*4150*0x865ebfd711b923c67df7b75939c854f0815b01c9|0*4415*0x20116f55b147878295aeff36dce7fc50
+M/fulladder_arch=M/FullAdder_Arch 21|0|vd0|1497542158391|./../../../src/fulladder.vhd|0*4150*0x865ebfd711b923c67df7b75939c854f0815b01c9|0*4415*0x20116f55b147878295aeff36dce7fc50
 R=./../../../src/fulladder.vhd|4
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a09c3c1b02646f7ffcd5d6cb5b8d6e21c1
-Version/fulladder_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|a86fc5bcef2a9dd890df7765c83a6818f25916c65ad04615a551c485f3c58d5849495361cec5d0288ec4c8af18cdf421
+Version/fulladder_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|a86fc5bcef2a9dd890df7765c83a6818f25916c65ad04615a551c485f3c58d581607b4f9f1fbd7c8996222a80dda36dc
 
 [gregister]
-A/gregister_arch=A/GRegister_Arch 21|./../../../src/gregister.vhd|18|1*221751
-BinI32/gregister_arch=3*59811
+A/gregister_arch=A/GRegister_Arch 21|./../../../src/gregister.vhd|18|1*358249
+BinI32/gregister_arch=3*95698
 I=0*2332
-I/gregister_arch=I/GRegister_Arch 0*57671
+I/gregister_arch=I/GRegister_Arch 0*90982
 M=11|0|vd0|1497272646526|./../../../src/gregister.vhd|0*1903*0xac33f7edb6af57f3ab8cb740205eee2484a092b3|0*2241*0x23b75c12e3e89f2ef000564498faa8c2
-M/gregister_arch=M/GRegister_Arch 21|0|vd0|1497531673693|./../../../src/gregister.vhd|0*2533*0xec9971c813cf05399278a75bb76c22ccf641eca4|0*2831*0x20116f55b147878295aeff36dce7fc50
+M/gregister_arch=M/GRegister_Arch 21|0|vd0|1497542158452|./../../../src/gregister.vhd|0*2533*0xec9971c813cf05399278a75bb76c22ccf641eca4|0*2831*0x20116f55b147878295aeff36dce7fc50
 R=./../../../src/gregister.vhd|8
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|35ed6936f9c1e9410d13482414fcc097df31f63967ce5a0c454382956ff093b3299505c5e169fc1c4e3dff34e1d59f42
-Version/gregister_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|e69c0791e80739867a92d1bb24cb0151bebcf521a4eac8567424f7537fa82e10909b7d55a33e55fe81fb211cedf57eaf
+Version/gregister_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|e69c0791e80739867a92d1bb24cb0151bebcf521a4eac8567424f7537fa82e105a80e98f653b1c5e2cced90240bcd1c5
 
 [muxwithoffset]
-A/muxwithoffset_arch=A/MuxWithOffset_Arch 21|./../../../src/muxwithoffset.vhd|18|1*225236
-BinI32/muxwithoffset_arch=3*60959
+A/muxwithoffset_arch=A/MuxWithOffset_Arch 21|./../../../src/muxwithoffset.vhd|18|1*361734
+BinI32/muxwithoffset_arch=3*96846
 I=0*56041
-I/muxwithoffset_arch=I/MuxWithOffset_Arch 0*58201
+I/muxwithoffset_arch=I/MuxWithOffset_Arch 0*91512
 M=11|0|vd0|1497531642080|./../../../src/muxwithoffset.vhd|0*55529*0xf380d43826f8d09df232405c80201a8af04867bb|0*55942*0x23b75c12e3e89f2ef000564498faa8c2
-M/muxwithoffset_arch=M/MuxWithOffset_Arch 21|0|vd0|1497531673945|./../../../src/muxwithoffset.vhd|0*56285*0x18e610add7632a99db286e0f4298a36166a743b5|0*56747*0x20116f55b147878295aeff36dce7fc50
+M/muxwithoffset_arch=M/MuxWithOffset_Arch 21|0|vd0|1497542158579|./../../../src/muxwithoffset.vhd|0*56285*0x18e610add7632a99db286e0f4298a36166a743b5|0*56747*0x20116f55b147878295aeff36dce7fc50
 R=./../../../src/muxwithoffset.vhd|5
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|8a542802f4de2ceb72e2707623866c8657dc66bbf71c2c698c6cba689ff5a6c2cc0031437563389c86ff1e7670f37c3f
-Version/muxwithoffset_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|8a542802f4de2ceb72e2707623866c86730b5c4b95c7f1c32633c7672ad3a820016e95f67379e5362a5acfdd898e5c0b
+Version/muxwithoffset_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|8a542802f4de2ceb72e2707623866c86730b5c4b95c7f1c32633c7672ad3a820d2e8995a7767d0d72481534541664c2a
 
 [ripplecarryadder]
 A/ripplecarryadder_arch=A/RippleCarryAdder_Arch 21|./../../../src/ripplecarryadder.vhd|15|1*203064
@@ -81,12 +103,47 @@ R=./../../../src/ripplecarryadder.vhd|4
 Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|21c6272b9d2a224c962f2b2fe72a6fb214b7a94b34f90f2475bf18818d7b573381fb425bdde7da8fc5b257c65f35bd19
 Version/ripplecarryadder_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|21c6272b9d2a224c962f2b2fe72a6fb2e09b464bb505196ce6cb5e44c2c547740263cfb2eaa22ddc843a950fc5983f49
 
+[rotator]
+A/rotator_arch=A/Rotator_Arch 21|./../../../src/rotator.vhd|22|1*372232
+BinI32/rotator_arch=3*99725
+I=0*69514
+I/rotator_arch=I/Rotator_Arch 0*92658
+M=11|0|vd0|1497541004634|./../../../src/rotator.vhd|0*68884*0x84488b7b38ec859268c7e44af20f1b0da3bf560d|0*69427*0x23b75c12e3e89f2ef000564498faa8c2
+M/rotator_arch=M/Rotator_Arch 21|0|vd0|1497542158812|./../../../src/rotator.vhd|0*78434*0xd9dbebe94ab11397fd1118825e4a959bf835ed98|0*79946*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/rotator.vhd|5
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|25f9e92196ce59972571c37de40b790926527262ddaa47cb266f3a3c4d9b973a5462307ba3beecdd9ca0904cb7cc151d
+Version/rotator_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|304f3d64dcd74fe0e0e1d4237af954c62c0b6c5a22d9dd9ef7950ade931d2f8bfe628322158137a70fa72d351dd80600
+
+[shiftadjuster]
+A/shiftadjuster_arch=A/ShiftAdjuster_Arch 21|./../../../src/shiftadjuster.vhd|15|1*376983
+BinI32/shiftadjuster_arch=3*100557
+I=0*64103
+I/shiftadjuster_arch=I/ShiftAdjuster_Arch 0*93823
+M=11|0|vd0|1497540646711|./../../../src/shiftadjuster.vhd|0*63666*0xcda3c2916be9b9828c9bf76bf376775a8a1f8db3|0*64004*0x23b75c12e3e89f2ef000564498faa8c2
+M/shiftadjuster_arch=M/ShiftAdjuster_Arch 21|0|vd0|1497542158873|./../../../src/shiftadjuster.vhd|0*93021*0x5f292f1e4bb24d6b990dbd3a1b9426a34a751e54|0*93702*0x20116f55b147878295aeff36dce7fc50
+R=./../../../src/shiftadjuster.vhd|5
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|751241ee06f7a0cfd64eb07ccf4b1f275818c9296e1b08cfdfe89779ba098d4a9cae30b5c82744dfd700957a0349baa6
+Version/shiftadjuster_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|751241ee06f7a0cfd64eb07ccf4b1f2725c06cf4aca89a1e488bd62180936e4c29d2cf924f38c6f817d4dc7d9386fbe1
+
+[shiftadjuster_tb]
+A/shiftadjuster_tb_arch=A/ShiftAdjuster_TB_Arch 21|./../../../test/asjuster_tb.vhd|8|1*379260
+BinI32/shiftadjuster_tb_arch=3*101137
+I=0*74746
+I/shiftadjuster_tb_arch=I/ShiftAdjuster_TB_Arch 0*94127
+M=11|0|vd0|1497541178009|./../../../test/asjuster_tb.vhd|0*74427*0x70b1c4a284137e845cf83a1f24c009f55347746a|0*74645*0x23b75c12e3e89f2ef000564498faa8c2
+M/shiftadjuster_tb_arch=M/ShiftAdjuster_TB_Arch 21|0|vd0|1497542158952|./../../../test/asjuster_tb.vhd|0*84895*0xca5c6beec2f8545cf575bc81064b851d9a8ff774|0*86194*0x20116f55b147878295aeff36dce7fc50
+R=./../../../test/asjuster_tb.vhd|5
+Version=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|751241ee06f7a0cfd64eb07ccf4b1f270de59697b7a4512942c55e8ae0bc63927b60b9327d01b8cafcadfd48423c60f0
+Version/shiftadjuster_tb_arch=10.3.3559.6081  (Windows)|00000003789cd3f5370600015b00b0|751241ee06f7a0cfd64eb07ccf4b1f27c5ab3c48a4176a9bfd71987e2c524fd47e6be99fea74012fe4c20aa37e4ae9b6
+
 [~MFT]
-0=10|0cordic.mgf|58464|44822
-1=10|1cordic.mgf|226599|206160
-3=10|3cordic.mgf|61718|58544
+0=26|0cordic.mgf|94127|67848
+1=20|1cordic.mgf|379260|334529
+3=20|3cordic.mgf|101137|94431
 
 [~U]
+accumulator=Accumulator 11|0*60384|
+addersubtractor=AdderSubtractor 11|0*61341|
 arithmeticshifter=ArithmeticShifter 11|0*30625|
 arithmeticshifter_tb=ArithmeticShifter_TB 11|0*14764|
 counter=Counter 11|0*0|
@@ -94,3 +151,6 @@ fulladder=FullAdder 11|0*863|
 gregister=GRegister 11|0*1653|
 muxwithoffset=MuxWithOffset 11|0*55257|
 ripplecarryadder=RippleCarryAdder 11|0*3156|
+rotator=Rotator 11|0*68597|
+shiftadjuster=ShiftAdjuster 11|0*63421|
+shiftadjuster_tb=ShiftAdjuster_TB 11|0*74289|

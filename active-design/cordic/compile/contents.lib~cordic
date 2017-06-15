@@ -1,4 +1,8 @@
-35
+53
+~E 1 "./../../../src/accumulator.vhd" 4 Accumulator
+~A 1 "./../../../src/accumulator.vhd" 16 Accumulator_Arch
+~E 1 "./../../../src/addersubtractor.vhd" 5 AdderSubtractor
+~A 1 "./../../../src/addersubtractor.vhd" 16 AdderSubtractor_Arch
 ~E 1 "./../../../src/arithmeticshifter.vhd" 5 ArithmeticShifter
 ~A 1 "./../../../src/arithmeticshifter.vhd" 17 ArithmeticShifter_Arch
 ~E 1 "./../../../test/shifter_tb.vhd" 5 ArithmeticShifter_TB
@@ -13,3 +17,9 @@
 ~A 1 "./../../../src/muxwithoffset.vhd" 18 MuxWithOffset_Arch
 ~E 1 "./../../../src/ripplecarryadder.vhd" 4 RippleCarryAdder
 ~A 1 "./../../../src/ripplecarryadder.vhd" 15 RippleCarryAdder_Arch
+~E 1 "./../../../src/rotator.vhd" 5 Rotator
+~A 1 "./../../../src/rotator.vhd" 22 Rotator_Arch
+~E 1 "./../../../src/shiftadjuster.vhd" 5 ShiftAdjuster
+~A 1 "./../../../src/shiftadjuster.vhd" 15 ShiftAdjuster_Arch
+~E 1 "./../../../test/asjuster_tb.vhd" 5 ShiftAdjuster_TB
+~A 1 "./../../../test/asjuster_tb.vhd" 8 ShiftAdjuster_TB_Arch

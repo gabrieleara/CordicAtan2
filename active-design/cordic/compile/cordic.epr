@@ -3,4 +3,9 @@
 "E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd" VHDL cordic 1 0 0 -02
 "E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd" VHDL cordic 1 0 0 -02
 "E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd" VHDL cordic 1 0 0 -02
 . . 0 0 0

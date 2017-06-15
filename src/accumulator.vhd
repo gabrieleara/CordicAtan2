@@ -69,6 +69,6 @@ begin
 
 	-- The loopback is the output value of the register, unless the synchronous
 	-- reset "zero" is set to 1
-	loopback <= cvalue when zero == '0' else (others => '0');
+	loopback <= cvalue when zero = '0' else (others => '0');
 
 end Accumulator_Arch;
