@@ -1,4 +1,4 @@
-Active-HDL 10.3.3559.6081  2017-06-15 12:20:49
+Active-HDL 10.3.3559.6081  2017-06-15 15:01:21
 
 Elaboration top modules:
 Architecture                  ArithmeticShifter_TB_Arch(ArithmeticShifter_TB)
@@ -28,3 +28,9 @@ cordic                                           | None
 ieee                                             | Standard IEEE packages library
 std                                              | Standard VHDL library
 --------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+
+
+The performance of simulation is reduced. Version Student Edition

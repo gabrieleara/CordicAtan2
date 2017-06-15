@@ -1,7 +1,5 @@
-.\..\..\src\counter.vhd
 .\..\..\src\fulladder.vhd
 .\..\..\src\gregister.vhd
-.\..\..\src\ripplecarryadder.vhd
 .\..\..\src\arithmeticshifter.vhd
 .\..\..\src\muxwithoffset.vhd
 .\..\..\test\shifter_tb.vhd

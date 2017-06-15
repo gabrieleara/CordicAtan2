@@ -21,7 +21,7 @@ begin
 	selection: process(input, sel)
 		variable selValue : natural := 0;
 	begin
-		selValue := to_integer(resize(unsigned(sel), 8) + to_unsigned(offset, 8));
+		selValue := to_integer(resize(unsigned(sel), selSize+1) + to_unsigned(offset, selSize+1));
 
 		if (selValue > size-1) then
 			selValue := size-1;
