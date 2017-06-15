@@ -1,43 +1,404 @@
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/muxwithoffset.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Error: COMP96_0010: ../../../src/muxwithoffset.vhd : (14, 3): Invalid literal.
+# Error: COMP96_0010: ../../../src/muxwithoffset.vhd : (33, 3): Invalid literal.
+# Compile Entity "MuxWithOffset"
+# Error: COMP96_0018: ../../../src/muxwithoffset.vhd : (14, 3): Identifier expected.
+# Error: COMP96_0015: ../../../src/muxwithoffset.vhd : (14, 3): ')' expected.
+# Error: COMP96_0015: ../../../src/muxwithoffset.vhd : (14, 3): ';' expected.
+# Error: COMP96_0019: ../../../src/muxwithoffset.vhd : (14, 19): Keyword 'end' expected.
+# Error: COMP96_0015: ../../../src/muxwithoffset.vhd : (14, 19): ';' expected.
+# Error: COMP96_0016: ../../../src/muxwithoffset.vhd : (14, 21): Design unit declaration expected.
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# Error: COMP96_0019: ../../../src/muxwithoffset.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0015: ../../../src/muxwithoffset.vhd : (35, 6): ';' expected.
+# Error: COMP96_0016: ../../../src/muxwithoffset.vhd : (35, 14): Design unit declaration expected.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/muxwithoffset.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# Error: COMP96_0305: ../../../src/muxwithoffset.vhd : (25, 15): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0077: ../../../src/muxwithoffset.vhd : (25, 15): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: ../../../src/muxwithoffset.vhd : (33, 50): Unknown identifier "my_int".
+# Error: COMP96_0133: ../../../src/muxwithoffset.vhd : (33, 50): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/muxwithoffset.vhd : (33, 50): Undefined type of expression.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
 # Compile Entity "Counter"
 # Compile Architecture "Counter_Arch" of Entity "Counter"
-# Error: COMP96_0019: ../../../src/counter.vhd : (36, 2): Keyword 'begin' expected.
-# Error: COMP96_0016: ../../../src/counter.vhd : (36, 3): Design unit declaration expected.
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
 # Compile Entity "FullAdder"
 # Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
-# Error: COMP96_0016: ../../../src/gregister.vhd : (1, 1): Design unit declaration expected.
 # Compile Entity "GRegister"
 # Compile Architecture "GRegister_Arch" of Entity "GRegister"
 # File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
 # Compile Entity "RippleCarryAdder"
 # Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
-# Error: COMP96_0019: ../../../src/ripplecarryadder.vhd : (33, 3): Keyword 'end' expected.
-# Error: COMP96_0015: ../../../src/ripplecarryadder.vhd : (43, 8): ';' expected.
-# Error: COMP96_0016: ../../../src/ripplecarryadder.vhd : (43, 17): Design unit declaration expected.
-# Compile failure 6 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# Error: COMP96_0078: ../../../src/muxwithoffset.vhd : (33, 50): Unknown identifier "my_int".
+# Error: COMP96_0133: ../../../src/muxwithoffset.vhd : (33, 50): Cannot find object declaration.
+# Error: COMP96_0104: ../../../src/muxwithoffset.vhd : (33, 50): Undefined type of expression.
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/muxwithoffset.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
-# Compile Entity "Counter"
-# Compile Architecture "Counter_Arch" of Entity "Counter"
-# Error: COMP96_0019: ../../../src/counter.vhd : (39, 2): Keyword 'begin' expected.
-# Error: COMP96_0016: ../../../src/counter.vhd : (39, 3): Design unit declaration expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
-# Compile Entity "Counter"
-# Compile Architecture "Counter_Arch" of Entity "Counter"
-# Error: COMP96_0019: ../../../src/counter.vhd : (64, 2): Keyword 'end' expected.
-# Error: COMP96_0016: ../../../src/counter.vhd : (64, 3): Design unit declaration expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
-# Compile Entity "Counter"
-# Compile Architecture "Counter_Arch" of Entity "Counter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
+# Compile Entity "RippleCarryAdder"
+# Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7239 kB (elbread=1280 elab2=5808 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  12:14, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# 2 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 3 signal(s) traced.
+# 1 signal(s) traced.
+run 4000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
+# RUNTIME: Fatal Error: RUNTIME_0046 muxwithoffset.vhd (33): Incompatible ranges; left: (9 downto 0), right: (8 downto 0).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
+# KERNEL: Stopped at time 0 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
+# Compile Entity "RippleCarryAdder"
+# Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7239 kB (elbread=1280 elab2=5808 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  12:16, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
+# Compile Entity "RippleCarryAdder"
+# Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7239 kB (elbread=1280 elab2=5808 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  12:16, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 2 signal(s) traced.
+# 3 signal(s) traced.
+# 1 signal(s) traced.
+run 4000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__1/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__2/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__3/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__4/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__5/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__6/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__7/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__8/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__9/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__10/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__11/mux,  Process: selection.
+# KERNEL: stopped at time: 4 us
+acom -O3 -e 100 -work cordic -2002  $dsn/../../src/counter.vhd $dsn/../../src/fulladder.vhd $dsn/../../src/gregister.vhd $dsn/../../src/ripplecarryadder.vhd $dsn/../../src/arithmeticshifter.vhd $dsn/../../src/muxwithoffset.vhd $dsn/../../test/shifter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\counter.vhd
+# Compile Entity "Counter"
+# Compile Architecture "Counter_Arch" of Entity "Counter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd
+# Compile Entity "FullAdder"
+# Compile Architecture "FullAdder_Arch" of Entity "FullAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd
+# Compile Entity "GRegister"
+# Compile Architecture "GRegister_Arch" of Entity "GRegister"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\ripplecarryadder.vhd
+# Compile Entity "RippleCarryAdder"
+# Compile Architecture "RippleCarryAdder_Arch" of Entity "RippleCarryAdder"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd
+# Compile Entity "ArithmeticShifter"
+# Compile Architecture "ArithmeticShifter_Arch" of Entity "ArithmeticShifter"
+# File: E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd
+# Compile Entity "MuxWithOffset"
+# Compile Architecture "MuxWithOffset_Arch" of Entity "MuxWithOffset"
+# File: E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd
+# Compile Entity "ArithmeticShifter_TB"
+# Compile Architecture "ArithmeticShifter_TB_Arch" of Entity "ArithmeticShifter_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ArithmeticShifter_TB ArithmeticShifter_TB ArithmeticShifter_TB_Arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7239 kB (elbread=1280 elab2=5808 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  12:19, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+# 2 signal(s) traced.
+# 3 signal(s) traced.
+# 4 signal(s) traced.
+run 4000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__1/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__2/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__3/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__4/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__5/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__6/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__7/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__8/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__9/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__10/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__11/mux,  Process: selection.
+# KERNEL: stopped at time: 4 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7239 kB (elbread=1280 elab2=5808 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location E:\ProjectCordic\active-design\cordic\src\wave.asdb
+#  12:20, giovedì 15 giugno 2017
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/ProjectCordic/active-design/cordic/src/wave.asdb'.
+run 20000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__0/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__1/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__2/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__3/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__4/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__5/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__6/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__7/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__8/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__9/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__10/mux,  Process: selection.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /ArithmeticShifter_TB/shifterUnderTest/generateMuxes__11/mux,  Process: selection.
+# KERNEL: stopped at time: 20 us
+run 20000 ns
+# KERNEL: stopped at time: 40 us
+run 20000 ns
+# KERNEL: stopped at time: 60 us
+run 20000 ns
+# KERNEL: stopped at time: 80 us
+run 20000 ns
+# KERNEL: stopped at time: 100 us
+run 20000 ns
+# KERNEL: stopped at time: 120 us
+run 20000 ns
+# KERNEL: stopped at time: 140 us
+run 20000 ns
+# KERNEL: stopped at time: 160 us
+run 20000 ns
+# KERNEL: stopped at time: 180 us
+run 20000 ns
+# KERNEL: stopped at time: 200 us
+run 2000000 ns
+# KERNEL: stopped at time: 2200 us
+run 2000000 ns
+# KERNEL: stopped at time: 4200 us

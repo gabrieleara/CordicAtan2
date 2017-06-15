@@ -24,7 +24,7 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=E:\ProjectCordic\src
+fileopenfolder=E:\ProjectCordic\test
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -41,7 +41,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=arithmeticshifter_tb|ArithmeticShifter_TB_Arch|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -50,10 +50,16 @@ Selected=
 /..\..\..\src\fulladder.vhd=-1
 /..\..\..\src\gregister.vhd=-1
 /..\..\..\src\ripplecarryadder.vhd=-1
+/..\..\..\src\arithmeticshifter.vhd=-1
+/..\..\..\src\muxwithoffset.vhd=-1
+/..\..\..\test\shifter_tb.vhd=-1
 
 [Files.Data]
 .\..\..\src\counter.vhd=VHDL Source Code
 .\..\..\src\fulladder.vhd=VHDL Source Code
 .\..\..\src\gregister.vhd=VHDL Source Code
 .\..\..\src\ripplecarryadder.vhd=VHDL Source Code
+.\..\..\src\arithmeticshifter.vhd=VHDL Source Code
+.\..\..\src\muxwithoffset.vhd=VHDL Source Code
+.\..\..\test\shifter_tb.vhd=VHDL Source Code
 

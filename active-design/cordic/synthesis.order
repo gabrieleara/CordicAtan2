@@ -2,3 +2,6 @@ i<>.\..\..\src\counter.vhd
 i<>.\..\..\src\fulladder.vhd
 i<>.\..\..\src\gregister.vhd
 i<>.\..\..\src\ripplecarryadder.vhd
+i<>.\..\..\src\arithmeticshifter.vhd
+i<>.\..\..\src\muxwithoffset.vhd
+i<>.\..\..\test\shifter_tb.vhd
