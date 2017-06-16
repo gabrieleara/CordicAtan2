@@ -34,6 +34,11 @@ else
     tempB = + inA;
 end
 
+if inA == 0
+    res = atan;
+    return;
+end
+
 inA = tempA;
 inB = tempB;
 

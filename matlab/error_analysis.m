@@ -32,7 +32,7 @@ MAX_RANGE = 2^(nbit-1)-1;
 MIN_RANGE = -2^(nbit-1);
 
 % Arrays and matrices initialization
-[objective, fixerror, fix] = deal(zeros(floor(MAX_DIM / increment)));
+[objective, algerror, fixerror, fix] = deal(zeros(floor(MAX_DIM / increment)));
 
 cordicLut = cordiclut_generation(lutsize, false);
 
@@ -102,7 +102,7 @@ end
 
 if fixed
     
-    fprintf('Starting calculation of the fixed point table.\n');
+    fprintf('Starting calculation of the fixed point table...\n');
     
     if not(ishandle(wbar))
         error(errormsg);
@@ -116,6 +116,8 @@ if fixed
     % Let's move to fixed point numbers
     fixrange = fixed_integer(range, false, nbit);
     cordicLut = cordiclut_generation(lutsize, true, nbit);
+    
+    fix = fixed_integer(fix, true, nbit);
     
     i = 1;
     for inA = fixrange
@@ -135,7 +137,9 @@ if fixed
             % a little time may be needed, the computation of this function
             % has to be terminated first. If you want to abort the
             % computation badly just do a ^C.
-            fix(i, j) = gcordicatan2(inB, inA, cordicLut);
+            temp = gcordicatan2(inB, inA, cordicLut);
+            
+            fix(i, j) = temp;
 
             j = j+1;
             
@@ -163,7 +167,7 @@ if fixed
 
     % The quantization error is calculated as relative error to the
     % algorithmic value produced before
-    fixerror = magnitude(algorithm - fix, algorithm);
+    fixerror = magnitude(algorithm - double(fix), algorithm);
 
     fprintf('Quantization error table calculation terminated.\n');
 
