@@ -6,7 +6,7 @@ entity Rotator is
 	generic (
 		size		: positive := 8;
 		counterSize	: positive := 8
-		);
+	);
 	port (
 		clock		: in	std_ulogic;
 		reset		: in	std_ulogic;
@@ -15,6 +15,7 @@ entity Rotator is
 		dataIn		: in	std_ulogic_vector(size-1 downto 0);
 		otherData	: in	std_ulogic_vector(size-1 downto 0);
 		shiftedOut	: out	std_ulogic_vector(size-1 downto 0);
+		zeroOut		: out	std_ulogic;
 		msb			: out	std_ulogic
 	);
 end Rotator;
@@ -57,15 +58,16 @@ architecture Rotator_Arch of Rotator is
 	signal zero			: std_ulogic;
 	signal actualData	: std_ulogic_vector(size-1 downto 0);
 	signal accData		: std_ulogic_vector(size-1 downto 0);
+	signal zeroData		: std_ulogic_vector(size-1 downto 0);
+	signal zeroDataOut	: std_ulogic_vector(size-1 downto 0);
 	signal shift		: std_ulogic_vector(counterSize-1 downto 0);
 
 begin
 
 	-- TODO: zero detector, for first loop, check in synthesis phase
 	zero <= '1' when unsigned(count) = 0 else '0';
-	
-		
-	actualData <= dataIn when zero = '0' else accData;
+
+	actualData <= dataIn when zero = '1' else accData;
 
 	msb <= actualData(size-1);
 
@@ -80,7 +82,7 @@ begin
 
 	accumulatorInstance: Accumulator
 		generic map (size => size)
-		port map(
+		port map (
 			clock	=> clock,
 			reset	=> reset,
 			zero	=> zero,
@@ -99,5 +101,20 @@ begin
 			input		=> actualData,
 			output		=> shiftedOut
 		);
+
+	zeroData <= (others => '0') when zero = '0' else dataIn;
+
+	checkHalfPi: Accumulator
+		generic map (size => size)
+		port map (
+			clock	=> clock,
+			reset	=> reset,
+			zero	=> zero,
+			inA		=> zeroData,
+			sumSub	=> '0',
+			value	=> zeroDataOut
+		);
+
+	zeroOut <= '1' when (unsigned(zeroDataOut) = 0 or zero = '1') else '0';
 
 end Rotator_Arch;

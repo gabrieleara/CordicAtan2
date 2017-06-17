@@ -12,8 +12,8 @@ else
 end
 
 fid = fopen(filename, 'w');
-fprintf(fid, '%s,', toprint(1:len-1));
-fprintf(fid, '%s\n', toprint(len));
+fprintf(fid, '\"%s\",', toprint(1:len-1));
+fprintf(fid, '\"%s\"\n', toprint(len));
 fclose(fid);
 
 % dlmwrite(filename, toprint(2:length(blut),:), '-append') ;

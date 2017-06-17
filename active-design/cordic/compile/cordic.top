@@ -1,2 +1,4 @@
-FullAdder ENTITY
-GRegister ENTITY
+CORDICAtan2_TB ENTITY
+Rotator_TB ENTITY
+ArithmeticShifter_TB ENTITY
+ShiftAdjuster_TB ENTITY

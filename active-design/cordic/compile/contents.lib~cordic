@@ -1,4 +1,4 @@
-53
+96
 ~E 1 "./../../../src/accumulator.vhd" 4 Accumulator
 ~A 1 "./../../../src/accumulator.vhd" 16 Accumulator_Arch
 ~E 1 "./../../../src/addersubtractor.vhd" 5 AdderSubtractor
@@ -7,6 +7,14 @@
 ~A 1 "./../../../src/arithmeticshifter.vhd" 17 ArithmeticShifter_Arch
 ~E 1 "./../../../test/shifter_tb.vhd" 5 ArithmeticShifter_TB
 ~A 1 "./../../../test/shifter_tb.vhd" 8 ArithmeticShifter_TB_Arch
+~E 1 "./../../../src/atan2.vhd" 5 Atan2
+~A 1 "./../../../src/atan2.vhd" 17 Atan2_Arch
+~E 1 "./../../../src/cordic.vhd" 4 CORDIC
+~A 1 "./../../../src/cordic.vhd" 21 CORDIC_Arch
+~E 1 "./../../../src/cordicatan2.vhd" 5 CORDICAtan2
+~A 1 "./../../../src/cordicatan2.vhd" 17 CORDICAtan2_Arch
+~E 1 "./../../../test/cordicatan2_tb.vhd" 5 CORDICAtan2_TB
+~A 1 "./../../../test/cordicatan2_tb.vhd" 8 CORDICAtan2_TB_Arch
 ~E 1 "./../../../src/counter.vhd" 4 Counter
 ~A 1 "./../../../src/counter.vhd" 14 Counter_Arch
 ~E 1 "./../../../src/fulladder.vhd" 4 FullAdder
@@ -18,8 +26,17 @@
 ~E 1 "./../../../src/ripplecarryadder.vhd" 4 RippleCarryAdder
 ~A 1 "./../../../src/ripplecarryadder.vhd" 15 RippleCarryAdder_Arch
 ~E 1 "./../../../src/rotator.vhd" 5 Rotator
-~A 1 "./../../../src/rotator.vhd" 22 Rotator_Arch
+~A 1 "./../../../src/rotator.vhd" 23 Rotator_Arch
+~E 1 "./../../../test/rotator_tb.vhd" 5 Rotator_TB
+~A 1 "./../../../test/rotatorA_tb.vhd" 8 Rotator_Arch_TB
+~E 1 "./../../../test/rotatorA_tb.vhd" 5 RotatorA_TB
+~A 1 "./../../../test/rotatorA_tb.vhd" 8 RotatorA_TB_Arch
+~E 1 "./../../../test/rotatorB_tb.vhd" 5 RotatorB_TB
+~A 1 "./../../../test/rotatorB_tb.vhd" 8 Rotator_Arch_TB
+~A 1 "./../../../test/rotatorB_tb.vhd" 8 RotatorB_TB_Arch
 ~E 1 "./../../../src/shiftadjuster.vhd" 5 ShiftAdjuster
 ~A 1 "./../../../src/shiftadjuster.vhd" 15 ShiftAdjuster_Arch
 ~E 1 "./../../../test/asjuster_tb.vhd" 5 ShiftAdjuster_TB
 ~A 1 "./../../../test/asjuster_tb.vhd" 8 ShiftAdjuster_TB_Arch
+~E 1 "./../../../test/zeroA_tb.vhd" 5 ZeroA_TB
+~A 1 "./../../../test/zeroA_tb.vhd" 8 ZeroA_TB_Arch

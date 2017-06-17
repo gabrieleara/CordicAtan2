@@ -41,7 +41,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=shiftadjuster_tb|ShiftAdjuster_TB_Arch|0 
+HierarchyInformation=cordicatan2_tb|CORDICAtan2_TB_Arch|0 rotator_tb|Rotator_Arch_TB|0 rotatorb_tb|Rotator_Arch_TB|0 shiftadjuster_tb|ShiftAdjuster_TB_Arch|0 zeroa_tb|ZeroA_TB_Arch|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -56,6 +56,13 @@ Selected=
 /..\..\..\src\rotator.vhd=-1
 /..\..\..\src\shiftadjuster.vhd=-1
 /..\..\..\test\asjuster_tb.vhd=-1
+/..\..\..\src\atan2.vhd=-1
+/..\..\..\src\cordic.vhd=-1
+/..\..\..\src\cordicatan2.vhd=-1
+/..\..\..\test\cordicatan2_tb.vhd=-1
+/..\..\..\test\rotatorA_tb.vhd=-1
+/..\..\..\test\rotatorB_tb.vhd=-1
+/..\..\..\test\zeroA_tb.vhd=-1
 
 [Files.Data]
 .\..\..\src\fulladder.vhd=VHDL Source Code
@@ -68,4 +75,11 @@ Selected=
 .\..\..\src\rotator.vhd=VHDL Source Code
 .\..\..\src\shiftadjuster.vhd=VHDL Source Code
 .\..\..\test\asjuster_tb.vhd=VHDL Source Code
+.\..\..\src\atan2.vhd=VHDL Source Code
+.\..\..\src\cordic.vhd=VHDL Source Code
+.\..\..\src\cordicatan2.vhd=VHDL Source Code
+.\..\..\test\cordicatan2_tb.vhd=VHDL Source Code
+.\..\..\test\rotatorA_tb.vhd=VHDL Source Code
+.\..\..\test\rotatorB_tb.vhd=VHDL Source Code
+.\..\..\test\zeroA_tb.vhd=VHDL Source Code
 

@@ -8,3 +8,10 @@
 .\..\..\src\rotator.vhd
 .\..\..\src\shiftadjuster.vhd
 .\..\..\test\asjuster_tb.vhd
+.\..\..\src\atan2.vhd
+.\..\..\src\cordic.vhd
+.\..\..\src\cordicatan2.vhd
+.\..\..\test\cordicatan2_tb.vhd
+.\..\..\test\rotatorA_tb.vhd
+.\..\..\test\rotatorB_tb.vhd
+.\..\..\test\zeroA_tb.vhd

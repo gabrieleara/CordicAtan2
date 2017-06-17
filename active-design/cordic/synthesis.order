@@ -8,3 +8,10 @@ i<>.\..\..\src\addersubtractor.vhd
 i<>.\..\..\src\rotator.vhd
 i<>.\..\..\src\shiftadjuster.vhd
 i<>.\..\..\test\asjuster_tb.vhd
+i<>.\..\..\src\atan2.vhd
+i<>.\..\..\src\cordic.vhd
+i<>.\..\..\src\cordicatan2.vhd
+i<>.\..\..\test\cordicatan2_tb.vhd
+i<>.\..\..\test\rotator_tb.vhd
+i<>.\..\..\test\rotatorB_tb.vhd
+i<>.\..\..\test\zeroA_tb.vhd
