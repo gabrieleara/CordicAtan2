@@ -5,7 +5,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity GRegister is
+entity GRegisterEn is
 	generic (size : positive := 8);
 	port (
 		clock	: in	std_ulogic;
@@ -14,9 +14,9 @@ entity GRegister is
 		data	: in	std_ulogic_vector(size-1 downto 0);
 		value	: out	std_ulogic_vector(size-1 downto 0)
 	);
-end GRegister;
+end GRegisterEn;
 
-architecture GRegister_Arch of GRegister is
+architecture GRegisterEn_Arch of GRegisterEn is
 
 	-- Data to/from multiplexer
 	signal dataMuxIn : std_ulogic_vector(size-1 downto 0);
@@ -35,4 +35,4 @@ begin
 	dataMuxOut <= data when enable = '1' else dataMuxIn;
 	value <= dataMuxOut;
 
-end GRegister_Arch;
+end GRegisterEn_Arch;
