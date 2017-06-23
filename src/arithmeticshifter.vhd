@@ -2,6 +2,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+--------------------------------------------------------------------------------
+-- Arithmetic Shifter
+--
+-- This component defines a combinatoral logic that executes the Arithmetic
+-- Shift operation of the input word.
+--
+--------------------------------------------------------------------------------
+
+
 entity ArithmeticShifter is
 	generic (
 		size		: positive := 8;
@@ -29,6 +38,8 @@ architecture ArithmeticShifter_Arch of ArithmeticShifter is
 	end component;
 begin
 
+	-- Each Multiplexer with Offset used inside is used to select the proper
+	-- value for the output bit in the position equal to the given offset
 	generateMuxes: for i in 0 to size-1 generate
 		mux: MuxWithOffset
 			generic map (

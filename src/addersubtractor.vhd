@@ -1,7 +1,25 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
--- Performs A + B or B - A, depending respectively if the input sumSub is 0 or 1
+--------------------------------------------------------------------------------
+-- Adder Subtractor
+--
+-- This component defines a combinatoral logic that is able to perform basic
+-- sums, subtractions and change of sign in two's complement between numbers
+-- expressed with a generic number of bits.
+--
+-- The sumSub input is responsible to decide whether the output of the component
+-- will be the sum A+B or the subtractions B-A of the two inputs:
+--
+-- - sumSub = 0 then the output is A+B
+--
+-- - sumSub = 1 then the output is B-A
+--
+-- To perform the inverse of a single number, the number must be put in the A
+-- input and the B input must be zero, so basically the output is 0-A.
+--
+--------------------------------------------------------------------------------
+
 entity AdderSubtractor is
 	generic (size : positive := 8);
 	port (
@@ -30,15 +48,18 @@ architecture AdderSubtractor_Arch of AdderSubtractor is
 
 begin
 
-	-- When sumSub = 0 then the component performs A+B, otherwise it performs
-	-- B-A
+	-- To perform subtractions, the input A must be converted in its inverse in
+	-- two's complement and then added to the input B; to do so, we first
+	-- calculate the one's complement of A
 	actualInA <= inA when sumSub = '0' else not(inA);
 
+	-- The Adder inside is obtained chaining together Full Adders, in a Ripple
+	-- Carry Adder configuration
 	generateFullAdders: for i in 0 to size-1 generate
 
-		-- First adder has carryIn connected to the sumSub of the design, in
-		-- order to add 1 to perform the 2-complement on A when B-A operation is
-		-- needed
+		-- The first Full Adder has carryIn connected to the sumSub of the
+		-- design, in order to add 1 to perform the two's complement on A when
+		-- B-A operation is requested
 		first: if i = 0 generate
 				fullAdderFirst: FullAdder
 					port map (
@@ -50,7 +71,7 @@ begin
 					);
 			end generate first;
 
-		-- Internal adders have carries connected in chain
+		-- Internal Full Adders have carries connected in chain
 		internal: if i > 0 and i < size-1 generate
 				fullAdderInternal: FullAdder
 					port map (
@@ -62,7 +83,8 @@ begin
 					);
 			end generate internal;
 
-		-- Last adder has carryOut connected to the carryOut of the design
+		--The last Full Adder has carryOut connected to the carryOut of the
+		-- design
 		last: if i = size-1 generate
 				fullAdderLast: FullAdder
 					port map (

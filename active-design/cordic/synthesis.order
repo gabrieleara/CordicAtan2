@@ -15,3 +15,7 @@ i<>.\..\..\test\cordicatan2_tb.vhd
 i<>.\..\..\test\rotator_tb.vhd
 i<>.\..\..\test\rotatorB_tb.vhd
 i<>.\..\..\test\zeroA_tb.vhd
+i<>.\..\..\src\accumulatoren.vhd
+i<>.\..\..\src\counterwithmax.vhd
+i<>.\..\..\src\gregisteren.vhd
+i<>.\..\..\src\specialcase.vhd

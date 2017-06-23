@@ -26,7 +26,7 @@ architecture CORDICAtan2_Arch of CORDICAtan2 is
 			clock		: in	std_ulogic;
 			reset		: in	std_ulogic;
 			msbB		: in	std_ulogic;
-			zeroA		: in	std_ulogic;
+			enable		: in	std_ulogic;
 			count		: in	std_ulogic_vector(4-1 downto 0);
 			valid		: out	std_ulogic;
 			atan2Out	: out	std_ulogic_vector(12-1 downto 0)
@@ -44,28 +44,40 @@ architecture CORDICAtan2_Arch of CORDICAtan2 is
 			inA			: in	std_ulogic_vector(size-1 downto 0);
 			inB			: in	std_ulogic_vector(size-1 downto 0);
 			count		: in	std_ulogic_vector(counterSize-1 downto 0);
-			zeroA		: out	std_ulogic;
 			msbB		: out	std_ulogic
 
 		);
 	end component;
 
-	component Accumulator is
-		generic (size : positive := 8);
+	component CounterWithMax is
+		generic (
+			size	: positive := 8;
+			max		: positive := 16
+		);
 		port (
 			clock	: in	std_ulogic;
 			reset	: in	std_ulogic;
-			zero	: in	std_ulogic; -- synchronous reset of the accumulated value
-			inA		: in	std_ulogic_vector(size-1 downto 0);
-			sumSub	: in	std_ulogic;
 			value	: out	std_ulogic_vector(size-1 downto 0)
 		);
 	end component;
 
-	signal zeroCounter	: std_ulogic;
+	component SpecialCase is
+		generic (
+			size		: positive := 8;
+			counterSize	: positive := 8
+		);
+		port (
+			clock		: in	std_ulogic;
+			reset		: in	std_ulogic;
+			count		: in	std_ulogic_vector(counterSize-1 downto 0);
+			inA			: in	std_ulogic_vector(size-1 downto 0);
+			inB			: in	std_ulogic_vector(size-1 downto 0);
+			enable		: out	std_ulogic
+		);
+	end component;
+
 	signal msbB			: std_ulogic;
-	signal zeroA		: std_ulogic;
-	signal counterIn	: std_ulogic_vector(COUNTER_SIZE-1 downto 0);
+	signal enable		: std_ulogic;
 	signal count		: std_ulogic_vector(COUNTER_SIZE-1 downto 0);
 
 	signal extendedA	: std_ulogic_vector(EXTENDED_SIZE-1 downto 0);
@@ -80,7 +92,7 @@ begin
 			clock		=> clock,
 			reset		=> reset,
 			msbB		=> msbB,
-			zeroA		=> zeroA,
+			enable		=> enable,
 			count		=> count,
 			valid		=> valid,
 			atan2Out	=> atan2Out
@@ -97,24 +109,32 @@ begin
 			inA			=> extendedA,
 			inB			=> extendedB,
 			count		=> count,
-			zeroA		=> zeroA,
 			msbB		=> msbB
 		);
 
-	counter : Accumulator
-		generic map (size => COUNTER_SIZE)
+	counter : CounterWithMax
+		generic map (
+			size	=> COUNTER_SIZE,
+			max		=> LUT_SIZE
+		)
 		port map (
 			clock	=> clock,
 			reset	=> reset,
-			zero	=> zeroCounter,
-			inA		=> counterIn,
-			sumSub	=> '0',
 			value	=> count
 		);
 
-	zeroCounter <= '1' when (unsigned(count) = LUT_SIZE-1) else '0';
-	counterIn <= std_ulogic_vector(to_unsigned(1, COUNTER_SIZE))
-					when zeroCounter = '0'
-					else std_ulogic_vector(to_unsigned(0, COUNTER_SIZE));
+	special : SpecialCase
+		generic map (
+			size		=> SIZE,
+			counterSize	=> COUNTER_SIZE
+		)
+		port map (
+			clock		=> clock,
+			reset		=> reset,
+			count		=> count,
+			inA			=> inA,
+			inB			=> inB,
+			enable		=> enable
+		);
 
 end CORDICAtan2_Arch;

@@ -2,6 +2,30 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+--------------------------------------------------------------------------------
+-- Single Dimension Rotator
+--
+-- This component performs the rotations needed by the CORDIC algorithm on one
+-- of the dimensions of the input vector.
+--
+-- Each iteration, the component updates its value depending on the output of
+-- another Single Dimension Rotator and its currently stored value, as required
+-- by the CORDIC algorithm.
+--
+-- See the algorithm description for further information.
+--
+-- The sign input specifies if the given value has to be summed or subtracted to
+-- the currently stored value.
+--
+-- The output value of the rotator is its currently stored value, the other
+-- Rotator will shift this value by the amount of bits required by the CORDIC
+-- algorithm at the current iteration.
+--
+-- The inputData signal has a meaning only at the first iteration and then it is
+-- ignored for the following ones.
+--
+--------------------------------------------------------------------------------
+
 entity Rotator is
 	generic (
 		size		: positive := 8;
@@ -12,11 +36,9 @@ entity Rotator is
 		reset		: in	std_ulogic;
 		sign		: in	std_ulogic;
 		count		: in	std_ulogic_vector(counterSize-1 downto 0);
-		dataIn		: in	std_ulogic_vector(size-1 downto 0);
+		inputData	: in	std_ulogic_vector(size-1 downto 0);
 		otherData	: in	std_ulogic_vector(size-1 downto 0);
-		shiftedOut	: out	std_ulogic_vector(size-1 downto 0);
-		zeroOut		: out	std_ulogic;
-		msb			: out	std_ulogic
+		actualData	: out	std_ulogic_vector(size-1 downto 0)
 	);
 end Rotator;
 
@@ -56,20 +78,15 @@ architecture Rotator_Arch of Rotator is
 	end component;
 
 	signal zero			: std_ulogic;
-	signal actualData	: std_ulogic_vector(size-1 downto 0);
-	signal accData		: std_ulogic_vector(size-1 downto 0);
-	signal zeroData		: std_ulogic_vector(size-1 downto 0);
-	signal zeroDataOut	: std_ulogic_vector(size-1 downto 0);
+	signal shiftedOut	: std_ulogic_vector(size-1 downto 0);
+	signal storedData	: std_ulogic_vector(size-1 downto 0);
 	signal shift		: std_ulogic_vector(counterSize-1 downto 0);
 
 begin
 
-	-- TODO: zero detector, for first loop, check in synthesis phase
 	zero <= '1' when unsigned(count) = 0 else '0';
 
-	actualData <= dataIn when zero = '1' else accData;
-
-	msb <= actualData(size-1);
+	actualData <= inputData when zero = '1' else storedData;
 
 	adjusterInstance : ShiftAdjuster
 		generic map (
@@ -86,9 +103,9 @@ begin
 			clock	=> clock,
 			reset	=> reset,
 			zero	=> zero,
-			inA		=> otherData,
+			inA		=> shiftedOut,
 			sumSub	=> sign,
-			value	=> accData
+			value	=> storedData
 		);
 
 	shifter: ArithmeticShifter
@@ -98,23 +115,8 @@ begin
 		)
 		port map (
 			shift		=> shift,
-			input		=> actualData,
+			input		=> otherData,
 			output		=> shiftedOut
 		);
-
-	zeroData <= (others => '0') when zero = '0' else dataIn;
-
-	checkHalfPi: Accumulator
-		generic map (size => size)
-		port map (
-			clock	=> clock,
-			reset	=> reset,
-			zero	=> zero,
-			inA		=> zeroData,
-			sumSub	=> '0',
-			value	=> zeroDataOut
-		);
-
-	zeroOut <= '1' when (unsigned(zeroDataOut) = 0 or zero = '1') else '0';
 
 end Rotator_Arch;

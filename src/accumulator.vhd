@@ -1,12 +1,25 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+--------------------------------------------------------------------------------
+-- Accumulator
+--
+-- This component defines an Accumulator, which is basically like a Counter, but
+-- it is able to perform both sums or subtractions of the memorized value each
+-- iteration.
+--
+-- The zero input is used to reset synchronously the value of the Accumulator,
+-- so the value of the next iteration will be the one provided as input to the
+-- Accumulator, since it would be 0+A or 0-A, depending on the sumSub value.
+--
+--------------------------------------------------------------------------------
+
 entity Accumulator is
 	generic (size : positive := 8);
 	port (
 		clock	: in	std_ulogic;
 		reset	: in	std_ulogic;
-		zero	: in	std_ulogic; -- synchronous reset of the accumulated value
+		zero	: in	std_ulogic;
 		inA		: in	std_ulogic_vector(size-1 downto 0);
 		sumSub	: in	std_ulogic;
 		value	: out	std_ulogic_vector(size-1 downto 0)
@@ -38,7 +51,7 @@ architecture Accumulator_Arch of Accumulator is
 	-- Wire between the output of the adder and the input of the register
 	signal data		: std_ulogic_vector(size-1 downto 0);
 
-	-- Wire used to loopback the output of the register into the input of the
+	-- Wires used to loopback the output of the register into the input of the
 	-- adder and to connect it to the output of the design
 	signal cvalue	: std_ulogic_vector(size-1 downto 0);
 	signal loopback	: std_ulogic_vector(size-1 downto 0);

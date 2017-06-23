@@ -27,7 +27,7 @@ architecture beh of	accumulator_tb is
 	signal clk		: std_ulogic := '0';
 	signal rst		: std_ulogic := '1';
 	
-begin															   
+begin
 	
 	my_acc : AccumulatorMax
 	generic map (size => Nbit)

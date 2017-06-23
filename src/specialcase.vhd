@@ -2,6 +2,27 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+--------------------------------------------------------------------------------
+-- Special Case detector
+--
+-- This component checks for the special cases specified by the CORDICAtan2
+-- algorithm and pilots the Atan2 component via the enable signal.
+--
+-- The basic idea behind this component is that there are two special cases:
+--
+-- - A = 0, B <> 0
+--                 in this case, the result of the algorithm must be either pi/2
+--                 if B > 0 and -pi/2 otherwise; this result is obtained making
+--                 Atan2 component run only for the first iteration and then go 
+--                 idle after, until a new input is provided.
+--
+-- - A = 0, B = 0
+--                 in this case, the result of the algorithm must be 0 by
+--                 convention, so the Atan2 component must not consider any
+--                 value coming from the LUT that it has inside, until a new
+--                 input is provided.
+--------------------------------------------------------------------------------
+
 entity SpecialCase is
 	generic (
 		size		: positive := 8;
@@ -18,18 +39,6 @@ entity SpecialCase is
 end SpecialCase;
 
 architecture SpecialCase_Arch of SpecialCase is
-	component Accumulator is
-		generic (size : positive := 8);
-		port (
-			clock	: in	std_ulogic;
-			reset	: in	std_ulogic;
-			zero	: in	std_ulogic; -- synchronous reset of the accumulated value
-			inA		: in	std_ulogic_vector(size-1 downto 0);
-			sumSub	: in	std_ulogic;
-			value	: out	std_ulogic_vector(size-1 downto 0)
-		);
-	end component;
-
 	component GRegisterEn is
 		generic (size : positive := 8);
 		port (
@@ -46,33 +55,36 @@ architecture SpecialCase_Arch of SpecialCase is
 
 	signal isZero		: std_ulogic;
 
-	signal isZeroA		: std_ulogic;
+	signal isZeroA		: std_ulogic_vector(0 downto 0);
 	signal isZeroB		: std_ulogic;
 
-	signal isZeroAHold	: std_ulogic;
+	signal isZeroAHold	: std_ulogic_vector(0 downto 0);
 
 begin
 
-	-- TODO: zero detector, for first loop, check in synthesis phase
+	-- The register inside this component is active only at the first iteration
+	-- and for the following ones it will hold its value in order to enable or
+	-- not the Atan2 component.
 	zero <= '1' when unsigned(count) = 0 else '0';
-	enableReg <= not zero;
+	isZeroA <= "1" when unsigned(inA) = 0 else "0";
+	isZeroB <= '1' when unsigned(inB) = 0 else '0';
 
-	isZeroA <= '1' when (unsigned(inA) = 0 or zero = '1') else '0';
-	isZeroB <= '1' when (unsigned(inB) = 0 or zero = '1') else '0';
-
-	isZero <= isZeroA and isZeroB;
+	isZero <= isZeroA(0) and isZeroB;
 
 	isZeroAReg: GRegisterEn
 		generic map (size => 1)
 		port map (
 			clock	=> clock,
 			reset	=> reset,
-			enable	=> enableReg,
+			enable	=> zero,
 			data	=> isZeroA,
 			value	=> isZeroAHold
 		);
 
+	-- At the first iteration, the regster is bypassed and if the two input
+	-- values are both zero the Atan2 component is disabled; then we are only
+	-- interested if the input A was zero or not at the first iteration
 	enable <= not isZero when zero = '1'
-				else not isZeroAHold;
+				else not isZeroAHold(0);
 
 end SpecialCase_Arch;

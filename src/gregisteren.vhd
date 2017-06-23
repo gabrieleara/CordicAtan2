@@ -1,9 +1,19 @@
-------------------------------------------------------------------------------------
--- This file defines the type of a register with a generic size and an enable signal
-------------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
+
+--------------------------------------------------------------------------------
+-- Generic Register with Enable signal
+--
+-- This component defines a register of a generic size which can be enabled or
+-- disabled using a special input:
+--
+-- - when the enable input is high, the register acts like a normal Generic
+--   Register.
+--
+-- - when the enable input is low, the register enters a holding state and it is
+--   unsensitive to its input data.
+--
+--------------------------------------------------------------------------------
 
 entity GRegisterEn is
 	generic (size : positive := 8);
@@ -18,7 +28,10 @@ end GRegisterEn;
 
 architecture GRegisterEn_Arch of GRegisterEn is
 
-	-- Data to/from multiplexer
+	-- The sensitivity of the register is regulated using a multiplexer, the
+	-- inputs of the multiplexer are the data from outside and the value
+	-- contained in the register. When the enable signal is zero, the loopback
+	-- value is sampled again, hence the value of the register does not change.
 	signal dataMuxIn : std_ulogic_vector(size-1 downto 0);
 	signal dataMuxOut : std_ulogic_vector(size-1 downto 0);
 
@@ -33,6 +46,6 @@ begin
 	end process;
 
 	dataMuxOut <= data when enable = '1' else dataMuxIn;
-	value <= dataMuxOut;
+	value <= dataMuxIn;
 
 end GRegisterEn_Arch;

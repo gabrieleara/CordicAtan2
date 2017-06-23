@@ -12,9 +12,7 @@ entity CORDIC is
 		inA			: in	std_ulogic_vector(size-1 downto 0);
 		inB			: in	std_ulogic_vector(size-1 downto 0);
 		count		: in	std_ulogic_vector(counterSize-1 downto 0);
-		zeroA		: out	std_ulogic;
 		msbB		: out	std_ulogic
-
 	);
 end CORDIC;
 
@@ -29,22 +27,21 @@ architecture CORDIC_Arch of CORDIC is
 			reset		: in	std_ulogic;
 			sign		: in	std_ulogic;
 			count		: in	std_ulogic_vector(counterSize-1 downto 0);
-			dataIn		: in	std_ulogic_vector(size-1 downto 0);
+			inputData	: in	std_ulogic_vector(size-1 downto 0);
 			otherData	: in	std_ulogic_vector(size-1 downto 0);
-			shiftedOut	: out	std_ulogic_vector(size-1 downto 0);
-			zeroOut		: out	std_ulogic;
-			msb			: out	std_ulogic
+			actualData	: out	std_ulogic_vector(size-1 downto 0)
 		);
 	end component;
 
 	signal msb			: std_ulogic;
 	signal notMsb		: std_ulogic;
-	signal shiftedA		: std_ulogic_vector(size-1 downto 0);
-	signal shiftedB		: std_ulogic_vector(size-1 downto 0);
+	signal actualA		: std_ulogic_vector(size-1 downto 0);
+	signal actualB		: std_ulogic_vector(size-1 downto 0);
 begin
 
+	msb <= actualB(size-1);
 	msbB <= msb;
-	notMsb <= not msb;
+	notMsb <= not actualB(size-1);
 
 	rotatorA: Rotator
 		generic map (
@@ -56,13 +53,10 @@ begin
 			reset		=> reset,
 			sign		=> msb,
 			count		=> count,
-			dataIn		=> inA,
-			otherData	=> shiftedB,
-			shiftedOut	=> shiftedA,
-			zeroOut		=> zeroA,
-			msb			=> open
+			inputData	=> inA,
+			otherData	=> actualB,
+			actualData	=> actualA
 		);
-
 
 	rotatorB: Rotator
 		generic map (
@@ -74,10 +68,8 @@ begin
 			reset		=> reset,
 			sign		=> notMsb,
 			count		=> count,
-			dataIn		=> inB,
-			otherData	=> shiftedA,
-			shiftedOut	=> shiftedB,
-			zeroOut		=> open,
-			msb			=> msb
+			inputData	=> inB,
+			otherData	=> actualA,
+			actualData	=> actualB
 		);
 end CORDIC_Arch;

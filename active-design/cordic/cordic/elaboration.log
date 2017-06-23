@@ -1,4 +1,4 @@
-Active-HDL 10.3.3559.6081  2017-06-17 11:46:26
+Active-HDL 10.3.3559.6081  2017-06-23 12:24:01
 
 Elaboration top modules:
 Architecture                  CORDICAtan2_TB_Arch(CORDICAtan2_TB)
@@ -11,13 +11,17 @@ CORDICAtan2_TB    | CORDICAtan2_TB_Arch    | cordic  |      | 10.3.3559.6081  (W
 CORDICAtan2       | CORDICAtan2_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 Atan2             | Atan2_Arch             | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 CORDIC            | CORDIC_Arch            | cordic  |      | 10.3.3559.6081  (Windows) | -O3
-Accumulator       | Accumulator_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+CounterWithMax    | CounterWithMax_Arch    | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+SpecialCase       | SpecialCase_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+AccumulatorEn     | AccumulatorEn_Arch     | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 AdderSubtractor   | AdderSubtractor_Arch   | cordic  |      | 10.3.3559.6081  (Windows) | -O3
-GRegister         | GRegister_Arch         | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+GRegisterEn       | GRegisterEn_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 FullAdder         | FullAdder_Arch         | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 Rotator           | Rotator_Arch           | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 ShiftAdjuster     | ShiftAdjuster_Arch     | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+Accumulator       | Accumulator_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 ArithmeticShifter | ArithmeticShifter_Arch | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+GRegister         | GRegister_Arch         | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 MuxWithOffset     | MuxWithOffset_Arch     | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 --------------------------------------------------------------------------------------------------------------
 
