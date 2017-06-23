@@ -1,9 +1,12 @@
---------------------------------------------------------------------------------
--- This file defines the type of a register with a generic size.
---------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
+
+--------------------------------------------------------------------------------
+-- Generic Register
+--
+-- This component defines a register of a generic size. The reset signal is
+-- active when it is set to 1.
+--------------------------------------------------------------------------------
 
 entity GRegister is
 	generic (size : positive := 8);

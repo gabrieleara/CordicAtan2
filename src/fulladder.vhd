@@ -1,6 +1,12 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+--------------------------------------------------------------------------------
+-- Full Adder
+--
+-- This component defines a standard full adder with one bit.
+--------------------------------------------------------------------------------
+
 entity FullAdder is
 	port (
 		inB			: in	std_ulogic;

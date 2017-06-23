@@ -52,6 +52,16 @@ begin
 		test_inA <= "000000000101";
 		test_inB <= "000000000111";
 
+		wait for 5000ns; 
+		
+		test_inA <= "000000000000";
+		test_inB <= "000000000111";
+
+		wait for 5000ns;
+		
+		test_inA <= "000000000000";
+		test_inB <= "000000000000";
+
 		wait for 5000ns;
 
 		test_end <= '1';

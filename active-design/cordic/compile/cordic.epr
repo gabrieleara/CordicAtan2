@@ -1,2 +1,22 @@
+"E:\ProjectCordic\active-design\cordic\..\..\src\fulladder.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\gregister.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\arithmeticshifter.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\muxwithoffset.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\shifter_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\accumulator.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\addersubtractor.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\rotator.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\shiftadjuster.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\asjuster_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\atan2.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\cordic.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\cordicatan2.vhd" VHDL cordic 1 0 0 -02
 "E:\ProjectCordic\active-design\cordic\..\..\test\cordicatan2_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\rotatorA_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\rotatorB_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\test\zeroA_tb.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\accumulatoren.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\counterwithmax.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\gregisteren.vhd" VHDL cordic 1 0 0 -02
+"E:\ProjectCordic\active-design\cordic\..\..\src\specialcase.vhd" VHDL cordic 1 0 0 -02
 . . 0 0 0
