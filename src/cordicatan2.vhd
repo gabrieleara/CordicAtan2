@@ -2,6 +2,23 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+--------------------------------------------------------------------------------
+-- CORDIC Atan2 Algorithm
+--
+-- This component implements the CORDIC algorithm for calculating the Atan2 of 
+-- two inputs A and B.
+--
+-- The component accepts an input each LUT_SIZE clock cycles.
+--
+-- The validity of the output is specified using an additional signal, the
+-- "valid" one. It shall be ignored otherwise.
+--
+-- When the "valid" signal is high, the output of the system is the result of
+-- the previously requested computation and a new values for A and B are sampled
+-- for the next computation.
+--
+--------------------------------------------------------------------------------
+
 entity CORDICAtan2 is
 	port (
 		clock		: in	std_ulogic;

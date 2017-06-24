@@ -1,13 +1,13 @@
-Active-HDL 10.3.3559.6081  2017-06-23 12:24:01
+Active-HDL 10.3.3559.6081  2017-06-24 21:32:17
 
 Elaboration top modules:
-Architecture                  CORDICAtan2_TB_Arch(CORDICAtan2_TB)
+Architecture                  System_TB_Arch(System_TB)
 
 
 --------------------------------------------------------------------------------------------------------------
 Entity            | Architecture           | Library | Info | Compiler Version          | Compilation Options
 --------------------------------------------------------------------------------------------------------------
-CORDICAtan2_TB    | CORDICAtan2_TB_Arch    | cordic  |      | 10.3.3559.6081  (Windows) | -O3
+System_TB         | System_TB_Arch         | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 CORDICAtan2       | CORDICAtan2_Arch       | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 Atan2             | Atan2_Arch             | cordic  |      | 10.3.3559.6081  (Windows) | -O3
 CORDIC            | CORDIC_Arch            | cordic  |      | 10.3.3559.6081  (Windows) | -O3

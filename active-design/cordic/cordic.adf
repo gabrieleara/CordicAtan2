@@ -24,7 +24,7 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-fileopenfolder=E:\ProjectCordic\src
+fileopenfolder=E:\ProjectCordic\test
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -41,7 +41,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=cordicatan2_tb|CORDICAtan2_TB_Arch|0 rotator_tb|Rotator_Arch_TB|0 rotatorb_tb|Rotator_Arch_TB|0 shiftadjuster_tb|ShiftAdjuster_TB_Arch|0 zeroa_tb|ZeroA_TB_Arch|0
+HierarchyInformation=cordicatan2_tb|CORDICAtan2_TB_Arch|0 system_tb|System_TB_Arch|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -66,7 +66,7 @@ Selected=
 /..\..\..\test\zeroA_tb.vhd=-1
 /..\..\..\test\cordicatan2_tb.vhd=-1
 /..\..\..\test\rotatorA_tb.vhd=-1
-/..\..\..\test\asjuster_tb.vhd=-1
+/..\..\..\test\system_tb.vhd=-1
 
 [Files.Data]
 .\..\..\src\fulladder.vhd=VHDL Source Code
@@ -89,5 +89,5 @@ Selected=
 .\..\..\test\zeroA_tb.vhd=VHDL Source Code
 .\..\..\test\cordicatan2_tb.vhd=VHDL Source Code
 .\..\..\test\rotatorA_tb.vhd=VHDL Source Code
-.\..\..\test\asjuster_tb.vhd=VHDL Source Code
+.\..\..\test\system_tb.vhd=VHDL Source Code
 

@@ -18,4 +18,4 @@
 .\..\..\test\zeroA_tb.vhd
 .\..\..\test\cordicatan2_tb.vhd
 .\..\..\test\rotatorA_tb.vhd
-.\..\..\test\asjuster_tb.vhd
+.\..\..\test\system_tb.vhd

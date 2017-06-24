@@ -6,7 +6,7 @@ use IEEE.numeric_std.all;
 -- Atan2 calculator
 --
 -- This component takes as input the iteration count of the CORDIC algorithm and
--- the sign (so the msb) of the B operand of the CORDIC algorithm and calculates
+-- the sign (so the MSB) of the B operand of the CORDIC algorithm and calculates
 -- the corresponding Atan2 value by repeatedly summing known Atan2 values,
 -- contained in a look up table (LUT).
 --
@@ -60,13 +60,6 @@ begin
 	atanFromLut <= lut(to_integer(unsigned(count)));
 	valid <= zero;
 
-	-- TODO: correct this error, the zero is ignored when enable is low. This is
-	-- indeed the correct behavior of the AccumulatorEn, but not what we wanted
-	-- to use actually, we want that when zero is high and enable is low the
-	-- value of the accumulator becomes zero.
-	--
-	-- Since the AccumulatorEn is used only here, change the behavior of the
-	-- AccumulatorEn to match the required behavior
 	atanAccumulator : AccumulatorEn
 		generic map (size => SIZE)
 		port map (

@@ -1,4 +1,4 @@
-function [ val ] = fixed_integer(v, out, len)
+function [ val ] = fixed_integer(v, out, len, extended)
 
 % ---------------------------------
 %        Arguments checking
@@ -9,8 +9,12 @@ if nargin < 1
 elseif nargin < 2
     out = true;
     len = 12;
+    extended = true;
 elseif nargin < 3
     len = 12;
+    extended = true;
+elseif nargin < 4
+    extended = true;
 end
 
 if out
@@ -25,9 +29,14 @@ else
     % ---------------------------------
     %    Input data type definition
     % ---------------------------------
-    
-    WORD_LENGTH      = len+2;         % Needed to avoid overflow,
-    FRACTION_LENGTH  = 0;             % numbers are treated as integers
+    if extended 
+        WORD_LENGTH      = len+2;     % Needed to avoid overflow,
+        FRACTION_LENGTH  = 0;         % numbers are treated as integers
+    else
+        WORD_LENGTH      = len;       % Used only to generate words the of
+        FRACTION_LENGTH  = 0;         % fixed size, not for calculation
+                                      % purposes
+    end
 end
 
 % Fixed Point arithmetic, cannot resize the variables
