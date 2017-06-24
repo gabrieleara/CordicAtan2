@@ -1,20 +1,20 @@
-110
+128
 ~E 1 "./../../../src/accumulator.vhd" 4 Accumulator
 ~A 1 "./../../../src/accumulator.vhd" 29 Accumulator_Arch
 ~E 1 "./../../../src/accumulatoren.vhd" 16 AccumulatorEn
-~A 1 "./../../../src/accumulatoren.vhd" 29 AccumulatorEn_Arch
+~A 1 "./../../../src/accumulatoren.vhd" 42 AccumulatorEn_Arch
 ~E 1 "./../../../src/addersubtractor.vhd" 5 AdderSubtractor
 ~A 1 "./../../../src/addersubtractor.vhd" 34 AdderSubtractor_Arch
 ~E 1 "./../../../src/arithmeticshifter.vhd" 5 ArithmeticShifter
-~A 1 "./../../../src/arithmeticshifter.vhd" 26 ArithmeticShifter_Arch
+~A 1 "./../../../src/arithmeticshifter.vhd" 25 ArithmeticShifter_Arch
 ~E 1 "./../../../test/shifter_tb.vhd" 5 ArithmeticShifter_TB
 ~A 1 "./../../../test/shifter_tb.vhd" 8 ArithmeticShifter_TB_Arch
 ~E 1 "./../../../src/atan2.vhd" 19 Atan2
 ~A 1 "./../../../src/atan2.vhd" 31 Atan2_Arch
 ~E 1 "./../../../src/cordic.vhd" 4 CORDIC
-~A 1 "./../../../src/cordic.vhd" 19 CORDIC_Arch
+~A 1 "./../../../src/cordic.vhd" 30 CORDIC_Arch
 ~E 1 "./../../../src/cordicatan2.vhd" 5 CORDICAtan2
-~A 1 "./../../../src/cordicatan2.vhd" 17 CORDICAtan2_Arch
+~A 1 "./../../../src/cordicatan2.vhd" 34 CORDICAtan2_Arch
 ~E 1 "./../../../test/cordicatan2_tb.vhd" 5 CORDICAtan2_TB
 ~A 1 "./../../../test/cordicatan2_tb.vhd" 8 CORDICAtan2_TB_Arch
 ~E 1 "./../../../src/counter.vhd" 4 Counter
@@ -46,5 +46,7 @@
 ~A 1 "./../../../test/asjuster_tb.vhd" 8 ShiftAdjuster_TB_Arch
 ~E 1 "./../../../src/specialcase.vhd" 26 SpecialCase
 ~A 1 "./../../../src/specialcase.vhd" 41 SpecialCase_Arch
+~E 1 "./../../../test/system_tb.vhd" 5 System_TB
+~A 1 "./../../../test/system_tb.vhd" 8 System_TB_Arch
 ~E 1 "./../../../test/zeroA_tb.vhd" 5 ZeroA_TB
 ~A 1 "./../../../test/zeroA_tb.vhd" 8 ZeroA_TB_Arch

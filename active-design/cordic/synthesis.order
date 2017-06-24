@@ -7,7 +7,6 @@ i<>.\..\..\src\accumulator.vhd
 i<>.\..\..\src\addersubtractor.vhd
 i<>.\..\..\src\rotator.vhd
 i<>.\..\..\src\shiftadjuster.vhd
-i<>.\..\..\test\asjuster_tb.vhd
 i<>.\..\..\src\atan2.vhd
 i<>.\..\..\src\cordic.vhd
 i<>.\..\..\src\cordicatan2.vhd
@@ -19,3 +18,4 @@ i<>.\..\..\src\accumulatoren.vhd
 i<>.\..\..\src\counterwithmax.vhd
 i<>.\..\..\src\gregisteren.vhd
 i<>.\..\..\src\specialcase.vhd
+i<>.\..\..\test\system_tb.vhd

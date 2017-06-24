@@ -1,4 +1,4 @@
-function [res, minA, minB, maxA, maxB] = gcordicatan2(inB, inA, cordicLut)
+function atan = gcordicatan2(inB, inA, cordicLut)
 
 LUT_SIZE = length(cordicLut);
 
@@ -7,18 +7,15 @@ if nargin < 3
 end
 
 % ---------------------------------
-%           Lut generation
-% ---------------------------------
-
-shiftLut = shiftlut_generation(LUT_SIZE);
-
-% ---------------------------------
 %           The Algorithm
 % ---------------------------------
 
-% Used to calculate needed bit size inside the component
-[minA, maxA] = deal(inA);
-[minB, maxB] = deal(inB);
+if(inA == 0 && inB == 0)
+    % This is used to format the output with the sime type of the cordicLut
+    % elements
+    atan = zeros(1, 1, 'like', cordicLut(1));
+    return;
+end
 
 sign = inB < 0; % equal to the msb of inb
 
@@ -35,47 +32,35 @@ else
 end
 
 if inA == 0
-    res = atan;
     return;
 end
 
 inA = tempA;
 inB = tempB;
 
-
-for i = 2:LUT_SIZE % 1 to LUT_SIZE-1
+% It will be from 1 to LUT_SIZE-1 for a 0-based array
+for i = 2:LUT_SIZE
     
-    sign = inB < 0; % equal to the msb of inb
+    sign = inB < 0; % Equal to the MSB of inB
     
     if sign == 0
         atan = atan + cordicLut(i);
         
-        tempA = inA + bitsra(inB, shiftLut(i));
-        tempB = inB - bitsra(inA, shiftLut(i));
+        % This will be i-1 in for a 0-based array
+        tempA = inA + bitsra(inB, i-2);
+        tempB = inB - bitsra(inA, i-2);
     else
         atan = atan - cordicLut(i);
         
-        tempA = inA - bitsra(inB, shiftLut(i));
-        tempB = inB + bitsra(inA, shiftLut(i));
+        % This will be i-1 in for a 0-based array
+        tempA = inA - bitsra(inB, i-2);
+        tempB = inB + bitsra(inA, i-2);
     end
     
     inA = tempA;
     inB = tempB;
-    
-    % Used only to check for the required number of bits
-%     if inA > maxA
-%         maxA = inA;
-%     elseif inA < minA
-%         minA = inA;
-%     end
-%     
-%     if inB > maxB
-%         maxB = inB;
-%     elseif inB < minB
-%         minB = inB;
-%     end
 end
 
-res = atan;
+atan = atan;
 
 end

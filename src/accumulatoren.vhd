@@ -7,9 +7,22 @@ use IEEE.std_logic_1164.all;
 -- This component defines a variation of the Accumulator which uses a Generic
 -- Register with Enable as memory.
 --
--- Its behavior is the same of the Accumulator, as long as the enable signal is
--- high. When the enable signal is low, the Accumulator behaves in the same way
--- of a Generic Register with Enable, ignoring any input from outside.
+-- Its behavior depends on both the values of the zero and the enable signals;
+-- the exact behavior of the component is the following:
+
+-- +---------------------------------------------------------------------------+
+-- |    Zero    |   Enable   |                    Behavior                     |
+-- +============+============+=================================================+
+-- |     0      |     1      | The same exact behavior of the Accumulator      |
+-- +------------+------------+-------------------------------------------------+
+-- |     1      |     1      | The same exact behavior of the Accumulator      |
+-- +------------+------------+-------------------------------------------------+
+-- |     0      |     0      | The component becomes insensitive to the input  |
+-- |            |            | values, like the Register with Enable signal    |
+-- +------------+------------+-------------------------------------------------+
+-- |     1      |     0      | The component stored value becomes zero, for    |
+-- |            |            | whatever input value is provided                |
+-- +------------+------------+-------------------------------------------------+
 --
 --------------------------------------------------------------------------------
 
@@ -18,8 +31,8 @@ entity AccumulatorEn is
 	port (
 		clock	: in	std_ulogic;
 		reset	: in	std_ulogic;
-		zero	: in	std_ulogic; -- synchronous reset of the accumulated value
-		enable	: in	std_ulogic; -- register enable
+		zero	: in	std_ulogic;
+		enable	: in	std_ulogic;
 		inA		: in	std_ulogic_vector(size-1 downto 0);
 		sumSub	: in	std_ulogic;
 		value	: out	std_ulogic_vector(size-1 downto 0)
@@ -57,6 +70,7 @@ architecture AccumulatorEn_Arch of AccumulatorEn is
 	signal cvalue		: std_ulogic_vector(size-1 downto 0);
 	signal loopback		: std_ulogic_vector(size-1 downto 0);
 
+	-- Wires used to ensure the behavior of the component described in the table
 	signal actualA		: std_ulogic_vector(size-1 downto 0);
 	signal actualEnable	: std_ulogic;
 
