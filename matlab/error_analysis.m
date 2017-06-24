@@ -179,4 +179,6 @@ end
 
 function val = magnitude(diff, val)
     val = abs(diff) ./ abs(val) * 100;
+    % val(isinf(val)) = 0;
+    val(val > 1000) = 0;
 end

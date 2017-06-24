@@ -45,5 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# =========================
+# Custom Settings
+# =========================
+matlab/figures/*
+matlab/Roba/*
 *.mat
 *.asv

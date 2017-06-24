@@ -1,4 +1,4 @@
-function surf3(matrix, range, cmap, reduced)
+function fig = surf3(matrix, range, cmap, reduced)
     if nargin < 2
         error('At least the matrix and the range must be supplied.');
     end
@@ -17,8 +17,8 @@ function surf3(matrix, range, cmap, reduced)
     if reduced
         l = length(range)-1;
 
-        reduced_indexes_y = floor(0.5*l):l;
-        reduced_indexes_x = floor(0.4955*l):ceil(0.5052*l);
+        reduced_indexes_y = floor(0.45*l):l;
+        reduced_indexes_x = floor(0.4908*l):ceil(0.51*l);
 
         range_y = range(reduced_indexes_y);
         range_x = range(reduced_indexes_x);
@@ -29,13 +29,13 @@ function surf3(matrix, range, cmap, reduced)
         range_x = range;
     end
     
-    surf(range_x, range_y, matrix);
+    fig = surf(range_x, range_y, matrix, 'LineStyle', 'none', 'Marker', '.', 'MarkerSize', 0.001, 'MarkerEdgeColor', 'flat', 'MarkerFaceColor', 'none');
     %colormap(flipud(gray))
     colormap(cmap);
     shading(gca, 'interp');
     
     if reduced
-        light('Position',[1 1 1],'Style','local')
+        light('Position',[50 -50 170],'Style','local')
     
         %light
         %lighting gouraud
