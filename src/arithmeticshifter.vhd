@@ -10,7 +10,6 @@ use IEEE.numeric_std.all;
 --
 --------------------------------------------------------------------------------
 
-
 entity ArithmeticShifter is
 	generic (
 		size		: positive := 8;

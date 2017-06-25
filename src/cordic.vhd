@@ -1,6 +1,17 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+--------------------------------------------------------------------------------
+-- CORDIC Algorithm
+--
+-- This component implements the CORDIC rotational algorithm for a vector of two
+-- components A and B.
+--
+-- The reuslt is obtained connecting together accordignly two Single Dimension
+-- Rotators.
+--
+--------------------------------------------------------------------------------
+
 entity CORDIC is
 	generic (
 		size		: positive := 8;
@@ -43,6 +54,8 @@ begin
 	msbB <= msb;
 	notMsb <= not actualB(size-1);
 
+	-- The sign in input of rotatorA is the same as the MSB of B, so 1 for B < 0
+	-- and 1 otherwise
 	rotatorA: Rotator
 		generic map (
 			size		=> size,
@@ -58,6 +71,7 @@ begin
 			actualData	=> actualA
 		);
 
+	-- The sign in input of rotatorB is the negation of the MSB of B itself
 	rotatorB: Rotator
 		generic map (
 			size		=> size,
