@@ -1,0 +1,698 @@
+
+*** Running vivado
+    with args -log CORDICAtan2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CORDICAtan2.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CORDICAtan2.tcl -notrace
+Command: synth_design -top CORDICAtan2 -part xc7z010clg400-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6980 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 295.984 ; gain = 77.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CORDICAtan2' [E:/ProjectCordic/src/cordicatan2.vhd:34]
+INFO: [Synth 8-3491] module 'Atan2' declared at 'E:/ProjectCordic/src/atan2.vhd:19' bound to instance 'atan2Calculator' of component 'Atan2' [E:/ProjectCordic/src/cordicatan2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'Atan2' [E:/ProjectCordic/src/atan2.vhd:31]
+	Parameter size bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'AccumulatorEn' declared at 'E:/ProjectCordic/src/accumulatoren.vhd:29' bound to instance 'atanAccumulator' of component 'AccumulatorEn' [E:/ProjectCordic/src/atan2.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'AccumulatorEn' [E:/ProjectCordic/src/accumulatoren.vhd:42]
+	Parameter size bound to: 12 - type: integer 
+	Parameter size bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'AdderSubtractor' declared at 'E:/ProjectCordic/src/addersubtractor.vhd:23' bound to instance 'addsubInstance' of component 'AdderSubtractor' [E:/ProjectCordic/src/accumulatoren.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'AdderSubtractor' [E:/ProjectCordic/src/addersubtractor.vhd:34]
+	Parameter size bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderFirst' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'FullAdder' [E:/ProjectCordic/src/fulladder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (1#1) [E:/ProjectCordic/src/fulladder.vhd:20]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderLast' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'AdderSubtractor' (2#1) [E:/ProjectCordic/src/addersubtractor.vhd:34]
+	Parameter size bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'GRegisterEn' declared at 'E:/ProjectCordic/src/gregisteren.vhd:18' bound to instance 'registerInstance' of component 'GRegisterEn' [E:/ProjectCordic/src/accumulatoren.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'GRegisterEn' [E:/ProjectCordic/src/gregisteren.vhd:29]
+	Parameter size bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GRegisterEn' (3#1) [E:/ProjectCordic/src/gregisteren.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'AccumulatorEn' (4#1) [E:/ProjectCordic/src/accumulatoren.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Atan2' (5#1) [E:/ProjectCordic/src/atan2.vhd:31]
+	Parameter size bound to: 14 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'CORDIC' declared at 'E:/ProjectCordic/src/cordic.vhd:15' bound to instance 'cordicInstance' of component 'CORDIC' [E:/ProjectCordic/src/cordicatan2.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'CORDIC' [E:/ProjectCordic/src/cordic.vhd:30]
+	Parameter size bound to: 14 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+	Parameter size bound to: 14 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Rotator' declared at 'E:/ProjectCordic/src/rotator.vhd:29' bound to instance 'rotatorA' of component 'Rotator' [E:/ProjectCordic/src/cordic.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Rotator' [E:/ProjectCordic/src/rotator.vhd:45]
+	Parameter size bound to: 14 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ShiftAdjuster' declared at 'E:/ProjectCordic/src/shiftadjuster.vhd:23' bound to instance 'adjusterInstance' of component 'ShiftAdjuster' [E:/ProjectCordic/src/rotator.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'ShiftAdjuster' [E:/ProjectCordic/src/shiftadjuster.vhd:33]
+	Parameter size bound to: 4 - type: integer 
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'AdderSubtractor' declared at 'E:/ProjectCordic/src/addersubtractor.vhd:23' bound to instance 'subtractor' of component 'AdderSubtractor' [E:/ProjectCordic/src/shiftadjuster.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'AdderSubtractor__parameterized1' [E:/ProjectCordic/src/addersubtractor.vhd:34]
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderFirst' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:64]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderLast' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'AdderSubtractor__parameterized1' (5#1) [E:/ProjectCordic/src/addersubtractor.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'ShiftAdjuster' (6#1) [E:/ProjectCordic/src/shiftadjuster.vhd:33]
+	Parameter size bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'E:/ProjectCordic/src/accumulator.vhd:17' bound to instance 'accumulatorInstance' of component 'Accumulator' [E:/ProjectCordic/src/rotator.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'Accumulator' [E:/ProjectCordic/src/accumulator.vhd:29]
+	Parameter size bound to: 14 - type: integer 
+	Parameter size bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'AdderSubtractor' declared at 'E:/ProjectCordic/src/addersubtractor.vhd:23' bound to instance 'addsubInstance' of component 'AdderSubtractor' [E:/ProjectCordic/src/accumulator.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'AdderSubtractor__parameterized3' [E:/ProjectCordic/src/addersubtractor.vhd:34]
+	Parameter size bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderFirst' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:64]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderInternal' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:76]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'E:/ProjectCordic/src/fulladder.vhd:10' bound to instance 'fullAdderLast' of component 'FullAdder' [E:/ProjectCordic/src/addersubtractor.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'AdderSubtractor__parameterized3' (6#1) [E:/ProjectCordic/src/addersubtractor.vhd:34]
+	Parameter size bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'GRegister' declared at 'E:/ProjectCordic/src/gregister.vhd:11' bound to instance 'registerInstance' of component 'GRegister' [E:/ProjectCordic/src/accumulator.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'GRegister' [E:/ProjectCordic/src/gregister.vhd:21]
+	Parameter size bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GRegister' (7#1) [E:/ProjectCordic/src/gregister.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator' (8#1) [E:/ProjectCordic/src/accumulator.vhd:29]
+	Parameter size bound to: 14 - type: integer 
+	Parameter shiftSize bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ArithmeticShifter' declared at 'E:/ProjectCordic/src/arithmeticshifter.vhd:13' bound to instance 'shifter' of component 'ArithmeticShifter' [E:/ProjectCordic/src/rotator.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'ArithmeticShifter' [E:/ProjectCordic/src/arithmeticshifter.vhd:25]
+	Parameter size bound to: 14 - type: integer 
+	Parameter shiftSize bound to: 4 - type: integer 
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized1' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized1' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized3' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized3' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized5' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 3 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized5' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized7' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized7' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized9' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized9' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized11' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 6 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized11' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized13' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 7 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized13' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized15' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 8 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized15' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized17' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 9 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized17' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized19' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized19' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized21' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 11 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized21' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized23' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 12 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized23' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 13 - type: integer 
+INFO: [Synth 8-3491] module 'MuxWithOffset' declared at 'E:/ProjectCordic/src/muxwithoffset.vhd:23' bound to instance 'mux' of component 'MuxWithOffset' [E:/ProjectCordic/src/arithmeticshifter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'MuxWithOffset__parameterized25' [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+	Parameter size bound to: 14 - type: integer 
+	Parameter selSize bound to: 4 - type: integer 
+	Parameter offset bound to: 13 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element selValue_reg was removed.  [E:/ProjectCordic/src/muxwithoffset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MuxWithOffset__parameterized25' (9#1) [E:/ProjectCordic/src/muxwithoffset.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'ArithmeticShifter' (10#1) [E:/ProjectCordic/src/arithmeticshifter.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Rotator' (11#1) [E:/ProjectCordic/src/rotator.vhd:45]
+	Parameter size bound to: 14 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Rotator' declared at 'E:/ProjectCordic/src/rotator.vhd:29' bound to instance 'rotatorB' of component 'Rotator' [E:/ProjectCordic/src/cordic.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'CORDIC' (12#1) [E:/ProjectCordic/src/cordic.vhd:30]
+	Parameter size bound to: 4 - type: integer 
+	Parameter max bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'CounterWithMax' declared at 'E:/ProjectCordic/src/counterwithmax.vhd:17' bound to instance 'counter' of component 'CounterWithMax' [E:/ProjectCordic/src/cordicatan2.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'CounterWithMax' [E:/ProjectCordic/src/counterwithmax.vhd:29]
+	Parameter size bound to: 4 - type: integer 
+	Parameter max bound to: 11 - type: integer 
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'AdderSubtractor' declared at 'E:/ProjectCordic/src/addersubtractor.vhd:23' bound to instance 'addsubInstance' of component 'AdderSubtractor' [E:/ProjectCordic/src/counterwithmax.vhd:62]
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'GRegister' declared at 'E:/ProjectCordic/src/gregister.vhd:11' bound to instance 'registerInstance' of component 'GRegister' [E:/ProjectCordic/src/counterwithmax.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'GRegister__parameterized1' [E:/ProjectCordic/src/gregister.vhd:21]
+	Parameter size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GRegister__parameterized1' (12#1) [E:/ProjectCordic/src/gregister.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'CounterWithMax' (13#1) [E:/ProjectCordic/src/counterwithmax.vhd:29]
+	Parameter size bound to: 12 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SpecialCase' declared at 'E:/ProjectCordic/src/specialcase.vhd:26' bound to instance 'special' of component 'SpecialCase' [E:/ProjectCordic/src/cordicatan2.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'SpecialCase' [E:/ProjectCordic/src/specialcase.vhd:41]
+	Parameter size bound to: 12 - type: integer 
+	Parameter counterSize bound to: 4 - type: integer 
+	Parameter size bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'GRegisterEn' declared at 'E:/ProjectCordic/src/gregisteren.vhd:18' bound to instance 'isZeroAReg' of component 'GRegisterEn' [E:/ProjectCordic/src/specialcase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'GRegisterEn__parameterized1' [E:/ProjectCordic/src/gregisteren.vhd:29]
+	Parameter size bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GRegisterEn__parameterized1' (13#1) [E:/ProjectCordic/src/gregisteren.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'SpecialCase' (14#1) [E:/ProjectCordic/src/specialcase.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'CORDICAtan2' (15#1) [E:/ProjectCordic/src/cordicatan2.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 336.063 ; gain = 117.344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 336.063 ; gain = 117.344
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/ProjectCordic/vivado-design/cordic/cordic.srcs/constrs_1/new/cordic_constraints.xdc]
+Finished Parsing XDC File [E:/ProjectCordic/vivado-design/cordic/cordic.srcs/constrs_1/new/cordic_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectCordic/vivado-design/cordic/cordic.srcs/constrs_1/new/cordic_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CORDICAtan2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CORDICAtan2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 643.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 643.555 ; gain = 424.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 643.555 ; gain = 424.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 643.555 ; gain = 424.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "zero" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "isZeroA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "isZeroB" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 643.555 ; gain = 424.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 26    
++---XORs : 
+	   3 Input      1 Bit         XORs := 52    
++---Registers : 
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 26    
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module AdderSubtractor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module GRegisterEn 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module AccumulatorEn 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Atan2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module AdderSubtractor__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module ShiftAdjuster 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module AdderSubtractor__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module GRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module Accumulator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module MuxWithOffset 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module MuxWithOffset__parameterized25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Rotator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module GRegister__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module CounterWithMax 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module GRegisterEn__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SpecialCase 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "special/isZeroB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "special/isZeroA" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 643.555 ; gain = 424.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 647.133 ; gain = 428.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |     5|
+|3     |LUT3  |     8|
+|4     |LUT4  |    47|
+|5     |LUT5  |    20|
+|6     |LUT6  |   164|
+|7     |MUXF7 |    13|
+|8     |FDCE  |    45|
+|9     |IBUF  |    26|
+|10    |OBUF  |    13|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   342|
+|2     |  atan2Calculator         |Atan2                       |    19|
+|3     |    atanAccumulator       |AccumulatorEn               |    19|
+|4     |      registerInstance    |GRegisterEn                 |    19|
+|5     |  cordicInstance          |CORDIC                      |    34|
+|6     |    rotatorA              |Rotator                     |    19|
+|7     |      accumulatorInstance |Accumulator_1               |    19|
+|8     |        registerInstance  |GRegister_2                 |    19|
+|9     |    rotatorB              |Rotator_0                   |    15|
+|10    |      accumulatorInstance |Accumulator                 |    15|
+|11    |        registerInstance  |GRegister                   |    15|
+|12    |  counter                 |CounterWithMax              |   248|
+|13    |    registerInstance      |GRegister__parameterized1   |   248|
+|14    |  special                 |SpecialCase                 |     1|
+|15    |    isZeroAReg            |GRegisterEn__parameterized1 |     1|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 757.727 ; gain = 539.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 757.727 ; gain = 231.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 757.727 ; gain = 539.008
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+144 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 757.727 ; gain = 539.008
+INFO: [Common 17-1381] The checkpoint 'E:/ProjectCordic/vivado-design/cordic/cordic.runs/synth_1/CORDICAtan2.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 757.727 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 16:42:34 2017...

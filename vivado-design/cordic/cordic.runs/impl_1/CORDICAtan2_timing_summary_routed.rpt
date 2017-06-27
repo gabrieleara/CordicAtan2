@@ -1,0 +1,1483 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Tue Jun 27 16:43:55 2017
+| Host         : DESKTOP-Q69KUU3 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file CORDICAtan2_timing_summary_routed.rpt -rpx CORDICAtan2_timing_summary_routed.rpx
+| Design       : CORDICAtan2
+| Device       : 7z010-clg400
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 25 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 13 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.013        0.000                      0                   57        0.220        0.000                      0                   57        3.500        0.000                       0                    46  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)         Period(ns)      Frequency(MHz)
+-----     ------------         ----------      --------------
+clock125  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clock125            2.013        0.000                      0                   57        0.220        0.000                      0                   57        3.500        0.000                       0                    46  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clock125
+  To Clock:  clock125
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.013ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.220ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.013ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[12]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.924ns  (logic 1.635ns (27.599%)  route 4.289ns (72.401%))
+  Logic Levels:           10  (LUT4=1 LUT6=8 MUXF7=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           0.903     6.733    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X41Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.830 r  counter/registerInstance/value[2]_i_18/O
+                         net (fo=1, routed)           0.000     6.830    counter/registerInstance/value[2]_i_18_n_0
+    SLICE_X41Y12         MUXF7 (Prop_muxf7_I1_O)      0.167     6.997 r  counter/registerInstance/value_reg[2]_i_10/O
+                         net (fo=1, routed)           0.432     7.428    counter/registerInstance/value_reg[2]_i_10_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I1_O)        0.229     7.657 r  counter/registerInstance/value[2]_i_4/O
+                         net (fo=2, routed)           0.357     8.014    counter/registerInstance/value[2]_i_4_n_0
+    SLICE_X43Y12         LUT6 (Prop_lut6_I0_O)        0.097     8.111 r  counter/registerInstance/value[4]_i_2/O
+                         net (fo=3, routed)           0.395     8.506    counter/registerInstance/value[4]_i_2_n_0
+    SLICE_X41Y9          LUT6 (Prop_lut6_I3_O)        0.097     8.603 f  counter/registerInstance/value[6]_i_2/O
+                         net (fo=3, routed)           0.323     8.925    counter/registerInstance/value[6]_i_2_n_0
+    SLICE_X39Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.022 r  counter/registerInstance/value[8]_i_3__0/O
+                         net (fo=3, routed)           0.282     9.304    counter/registerInstance/value[8]_i_3__0_n_0
+    SLICE_X36Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.401 r  counter/registerInstance/value[10]_i_3__0/O
+                         net (fo=3, routed)           0.399     9.801    counter/registerInstance/value[10]_i_3__0_n_0
+    SLICE_X36Y8          LUT6 (Prop_lut6_I4_O)        0.097     9.898 r  counter/registerInstance/value[13]_i_6/O
+                         net (fo=3, routed)           0.316    10.214    counter/registerInstance/value[13]_i_6_n_0
+    SLICE_X36Y7          LUT6 (Prop_lut6_I4_O)        0.097    10.311 r  counter/registerInstance/value[12]_i_1__0/O
+                         net (fo=1, routed)           0.000    10.311    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[12]
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[12]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X36Y7          FDCE (Setup_fdce_C_D)        0.032    12.324    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[12]
+  -------------------------------------------------------------------
+                         required time                         12.324    
+                         arrival time                         -10.311    
+  -------------------------------------------------------------------
+                         slack                                  2.013    
+
+Slack (MET) :             2.014ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[13]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.923ns  (logic 1.635ns (27.604%)  route 4.288ns (72.396%))
+  Logic Levels:           10  (LUT4=1 LUT6=8 MUXF7=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           0.903     6.733    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X41Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.830 r  counter/registerInstance/value[2]_i_18/O
+                         net (fo=1, routed)           0.000     6.830    counter/registerInstance/value[2]_i_18_n_0
+    SLICE_X41Y12         MUXF7 (Prop_muxf7_I1_O)      0.167     6.997 r  counter/registerInstance/value_reg[2]_i_10/O
+                         net (fo=1, routed)           0.432     7.428    counter/registerInstance/value_reg[2]_i_10_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I1_O)        0.229     7.657 r  counter/registerInstance/value[2]_i_4/O
+                         net (fo=2, routed)           0.357     8.014    counter/registerInstance/value[2]_i_4_n_0
+    SLICE_X43Y12         LUT6 (Prop_lut6_I0_O)        0.097     8.111 r  counter/registerInstance/value[4]_i_2/O
+                         net (fo=3, routed)           0.395     8.506    counter/registerInstance/value[4]_i_2_n_0
+    SLICE_X41Y9          LUT6 (Prop_lut6_I3_O)        0.097     8.603 f  counter/registerInstance/value[6]_i_2/O
+                         net (fo=3, routed)           0.323     8.925    counter/registerInstance/value[6]_i_2_n_0
+    SLICE_X39Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.022 r  counter/registerInstance/value[8]_i_3__0/O
+                         net (fo=3, routed)           0.282     9.304    counter/registerInstance/value[8]_i_3__0_n_0
+    SLICE_X36Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.401 r  counter/registerInstance/value[10]_i_3__0/O
+                         net (fo=3, routed)           0.399     9.801    counter/registerInstance/value[10]_i_3__0_n_0
+    SLICE_X36Y8          LUT6 (Prop_lut6_I4_O)        0.097     9.898 r  counter/registerInstance/value[13]_i_6/O
+                         net (fo=3, routed)           0.315    10.213    counter/registerInstance/value[13]_i_6_n_0
+    SLICE_X36Y7          LUT6 (Prop_lut6_I4_O)        0.097    10.310 r  counter/registerInstance/value[13]_i_1__0/O
+                         net (fo=1, routed)           0.000    10.310    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[13]
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[13]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X36Y7          FDCE (Setup_fdce_C_D)        0.032    12.324    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[13]
+  -------------------------------------------------------------------
+                         required time                         12.324    
+                         arrival time                         -10.310    
+  -------------------------------------------------------------------
+                         slack                                  2.014    
+
+Slack (MET) :             2.031ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.904ns  (logic 1.635ns (27.695%)  route 4.269ns (72.305%))
+  Logic Levels:           10  (LUT4=2 LUT6=7 MUXF7=1)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           0.903     6.733    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X41Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.830 r  counter/registerInstance/value[2]_i_18/O
+                         net (fo=1, routed)           0.000     6.830    counter/registerInstance/value[2]_i_18_n_0
+    SLICE_X41Y12         MUXF7 (Prop_muxf7_I1_O)      0.167     6.997 r  counter/registerInstance/value_reg[2]_i_10/O
+                         net (fo=1, routed)           0.432     7.428    counter/registerInstance/value_reg[2]_i_10_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I1_O)        0.229     7.657 r  counter/registerInstance/value[2]_i_4/O
+                         net (fo=2, routed)           0.357     8.014    counter/registerInstance/value[2]_i_4_n_0
+    SLICE_X43Y12         LUT6 (Prop_lut6_I0_O)        0.097     8.111 r  counter/registerInstance/value[4]_i_2/O
+                         net (fo=3, routed)           0.395     8.506    counter/registerInstance/value[4]_i_2_n_0
+    SLICE_X41Y9          LUT6 (Prop_lut6_I3_O)        0.097     8.603 f  counter/registerInstance/value[6]_i_2/O
+                         net (fo=3, routed)           0.323     8.925    counter/registerInstance/value[6]_i_2_n_0
+    SLICE_X39Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.022 r  counter/registerInstance/value[8]_i_3__0/O
+                         net (fo=3, routed)           0.282     9.304    counter/registerInstance/value[8]_i_3__0_n_0
+    SLICE_X36Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.401 r  counter/registerInstance/value[10]_i_3__0/O
+                         net (fo=3, routed)           0.399     9.801    counter/registerInstance/value[10]_i_3__0_n_0
+    SLICE_X36Y8          LUT6 (Prop_lut6_I4_O)        0.097     9.898 r  counter/registerInstance/value[13]_i_6/O
+                         net (fo=3, routed)           0.296    10.194    counter/registerInstance/value[13]_i_6_n_0
+    SLICE_X36Y7          LUT4 (Prop_lut4_I1_O)        0.097    10.291 r  counter/registerInstance/value[11]_i_1__0/O
+                         net (fo=1, routed)           0.000    10.291    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[11]
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X36Y7          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[11]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X36Y7          FDCE (Setup_fdce_C_D)        0.030    12.322    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[11]
+  -------------------------------------------------------------------
+                         required time                         12.322    
+                         arrival time                         -10.291    
+  -------------------------------------------------------------------
+                         slack                                  2.031    
+
+Slack (MET) :             2.394ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.541ns  (logic 1.336ns (24.113%)  route 4.205ns (75.887%))
+  Logic Levels:           9  (LUT4=2 LUT6=7)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           1.008     6.837    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.934 r  counter/registerInstance/value[2]_i_14/O
+                         net (fo=1, routed)           0.589     7.522    counter/registerInstance/value[2]_i_14_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I5_O)        0.097     7.619 f  counter/registerInstance/value[2]_i_4__0/O
+                         net (fo=2, routed)           0.310     7.930    counter/registerInstance/value[2]_i_4__0_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.027 f  counter/registerInstance/value[4]_i_3/O
+                         net (fo=3, routed)           0.328     8.355    counter/registerInstance/value[4]_i_3_n_0
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.452 f  counter/registerInstance/value[6]_i_3/O
+                         net (fo=3, routed)           0.233     8.685    counter/registerInstance/value[6]_i_3_n_0
+    SLICE_X39Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.782 f  counter/registerInstance/value[8]_i_3/O
+                         net (fo=3, routed)           0.213     8.995    counter/registerInstance/value[8]_i_3_n_0
+    SLICE_X38Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.092 r  counter/registerInstance/value[10]_i_3/O
+                         net (fo=3, routed)           0.198     9.290    counter/registerInstance/value[10]_i_3_n_0
+    SLICE_X37Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.387 r  counter/registerInstance/value[13]_i_4/O
+                         net (fo=3, routed)           0.444     9.831    counter/registerInstance/value[13]_i_4_n_0
+    SLICE_X37Y7          LUT4 (Prop_lut4_I1_O)        0.097     9.928 r  counter/registerInstance/value[11]_i_1/O
+                         net (fo=1, routed)           0.000     9.928    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[11]
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[11]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X37Y7          FDCE (Setup_fdce_C_D)        0.030    12.322    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[11]
+  -------------------------------------------------------------------
+                         required time                         12.322    
+                         arrival time                          -9.928    
+  -------------------------------------------------------------------
+                         slack                                  2.394    
+
+Slack (MET) :             2.398ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[12]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.539ns  (logic 1.336ns (24.122%)  route 4.203ns (75.878%))
+  Logic Levels:           9  (LUT4=1 LUT6=8)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           1.008     6.837    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.934 r  counter/registerInstance/value[2]_i_14/O
+                         net (fo=1, routed)           0.589     7.522    counter/registerInstance/value[2]_i_14_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I5_O)        0.097     7.619 f  counter/registerInstance/value[2]_i_4__0/O
+                         net (fo=2, routed)           0.310     7.930    counter/registerInstance/value[2]_i_4__0_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.027 f  counter/registerInstance/value[4]_i_3/O
+                         net (fo=3, routed)           0.328     8.355    counter/registerInstance/value[4]_i_3_n_0
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.452 f  counter/registerInstance/value[6]_i_3/O
+                         net (fo=3, routed)           0.233     8.685    counter/registerInstance/value[6]_i_3_n_0
+    SLICE_X39Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.782 f  counter/registerInstance/value[8]_i_3/O
+                         net (fo=3, routed)           0.213     8.995    counter/registerInstance/value[8]_i_3_n_0
+    SLICE_X38Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.092 r  counter/registerInstance/value[10]_i_3/O
+                         net (fo=3, routed)           0.198     9.290    counter/registerInstance/value[10]_i_3_n_0
+    SLICE_X37Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.387 r  counter/registerInstance/value[13]_i_4/O
+                         net (fo=3, routed)           0.442     9.829    counter/registerInstance/value[13]_i_4_n_0
+    SLICE_X37Y7          LUT6 (Prop_lut6_I2_O)        0.097     9.926 r  counter/registerInstance/value[12]_i_1/O
+                         net (fo=1, routed)           0.000     9.926    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[12]
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[12]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X37Y7          FDCE (Setup_fdce_C_D)        0.032    12.324    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[12]
+  -------------------------------------------------------------------
+                         required time                         12.324    
+                         arrival time                          -9.926    
+  -------------------------------------------------------------------
+                         slack                                  2.398    
+
+Slack (MET) :             2.445ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[13]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.491ns  (logic 1.336ns (24.329%)  route 4.155ns (75.671%))
+  Logic Levels:           9  (LUT4=1 LUT6=8)
+  Clock Path Skew:        -0.060ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.016ns = ( 12.016 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           1.008     6.837    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.934 r  counter/registerInstance/value[2]_i_14/O
+                         net (fo=1, routed)           0.589     7.522    counter/registerInstance/value[2]_i_14_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I5_O)        0.097     7.619 f  counter/registerInstance/value[2]_i_4__0/O
+                         net (fo=2, routed)           0.310     7.930    counter/registerInstance/value[2]_i_4__0_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.027 f  counter/registerInstance/value[4]_i_3/O
+                         net (fo=3, routed)           0.328     8.355    counter/registerInstance/value[4]_i_3_n_0
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.452 f  counter/registerInstance/value[6]_i_3/O
+                         net (fo=3, routed)           0.233     8.685    counter/registerInstance/value[6]_i_3_n_0
+    SLICE_X39Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.782 f  counter/registerInstance/value[8]_i_3/O
+                         net (fo=3, routed)           0.213     8.995    counter/registerInstance/value[8]_i_3_n_0
+    SLICE_X38Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.092 r  counter/registerInstance/value[10]_i_3/O
+                         net (fo=3, routed)           0.198     9.290    counter/registerInstance/value[10]_i_3_n_0
+    SLICE_X37Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.387 r  counter/registerInstance/value[13]_i_4/O
+                         net (fo=3, routed)           0.394     9.781    counter/registerInstance/value[13]_i_4_n_0
+    SLICE_X37Y7          LUT6 (Prop_lut6_I2_O)        0.097     9.878 r  counter/registerInstance/value[13]_i_1/O
+                         net (fo=1, routed)           0.000     9.878    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[13]
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.194    12.016    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y7          FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[13]/C
+                         clock pessimism              0.311    12.327    
+                         clock uncertainty           -0.035    12.292    
+    SLICE_X37Y7          FDCE (Setup_fdce_C_D)        0.032    12.324    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[13]
+  -------------------------------------------------------------------
+                         required time                         12.324    
+                         arrival time                          -9.878    
+  -------------------------------------------------------------------
+                         slack                                  2.445    
+
+Slack (MET) :             2.503ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.431ns  (logic 1.538ns (28.321%)  route 3.893ns (71.679%))
+  Logic Levels:           9  (LUT4=1 LUT6=7 MUXF7=1)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.015ns = ( 12.015 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           0.903     6.733    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X41Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.830 r  counter/registerInstance/value[2]_i_18/O
+                         net (fo=1, routed)           0.000     6.830    counter/registerInstance/value[2]_i_18_n_0
+    SLICE_X41Y12         MUXF7 (Prop_muxf7_I1_O)      0.167     6.997 r  counter/registerInstance/value_reg[2]_i_10/O
+                         net (fo=1, routed)           0.432     7.428    counter/registerInstance/value_reg[2]_i_10_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I1_O)        0.229     7.657 r  counter/registerInstance/value[2]_i_4/O
+                         net (fo=2, routed)           0.357     8.014    counter/registerInstance/value[2]_i_4_n_0
+    SLICE_X43Y12         LUT6 (Prop_lut6_I0_O)        0.097     8.111 r  counter/registerInstance/value[4]_i_2/O
+                         net (fo=3, routed)           0.395     8.506    counter/registerInstance/value[4]_i_2_n_0
+    SLICE_X41Y9          LUT6 (Prop_lut6_I3_O)        0.097     8.603 f  counter/registerInstance/value[6]_i_2/O
+                         net (fo=3, routed)           0.323     8.925    counter/registerInstance/value[6]_i_2_n_0
+    SLICE_X39Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.022 r  counter/registerInstance/value[8]_i_3__0/O
+                         net (fo=3, routed)           0.282     9.304    counter/registerInstance/value[8]_i_3__0_n_0
+    SLICE_X36Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.401 r  counter/registerInstance/value[10]_i_3__0/O
+                         net (fo=3, routed)           0.319     9.721    counter/registerInstance/value[10]_i_3__0_n_0
+    SLICE_X36Y8          LUT6 (Prop_lut6_I1_O)        0.097     9.818 r  counter/registerInstance/value[10]_i_1__0/O
+                         net (fo=1, routed)           0.000     9.818    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[10]
+    SLICE_X36Y8          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.193    12.015    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X36Y8          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[10]/C
+                         clock pessimism              0.311    12.326    
+                         clock uncertainty           -0.035    12.291    
+    SLICE_X36Y8          FDCE (Setup_fdce_C_D)        0.030    12.321    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.321    
+                         arrival time                          -9.818    
+  -------------------------------------------------------------------
+                         slack                                  2.503    
+
+Slack (MET) :             2.505ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.430ns  (logic 1.538ns (28.323%)  route 3.892ns (71.677%))
+  Logic Levels:           9  (LUT4=2 LUT6=6 MUXF7=1)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.015ns = ( 12.015 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           0.903     6.733    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X41Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.830 r  counter/registerInstance/value[2]_i_18/O
+                         net (fo=1, routed)           0.000     6.830    counter/registerInstance/value[2]_i_18_n_0
+    SLICE_X41Y12         MUXF7 (Prop_muxf7_I1_O)      0.167     6.997 r  counter/registerInstance/value_reg[2]_i_10/O
+                         net (fo=1, routed)           0.432     7.428    counter/registerInstance/value_reg[2]_i_10_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I1_O)        0.229     7.657 r  counter/registerInstance/value[2]_i_4/O
+                         net (fo=2, routed)           0.357     8.014    counter/registerInstance/value[2]_i_4_n_0
+    SLICE_X43Y12         LUT6 (Prop_lut6_I0_O)        0.097     8.111 r  counter/registerInstance/value[4]_i_2/O
+                         net (fo=3, routed)           0.395     8.506    counter/registerInstance/value[4]_i_2_n_0
+    SLICE_X41Y9          LUT6 (Prop_lut6_I3_O)        0.097     8.603 f  counter/registerInstance/value[6]_i_2/O
+                         net (fo=3, routed)           0.323     8.925    counter/registerInstance/value[6]_i_2_n_0
+    SLICE_X39Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.022 r  counter/registerInstance/value[8]_i_3__0/O
+                         net (fo=3, routed)           0.282     9.304    counter/registerInstance/value[8]_i_3__0_n_0
+    SLICE_X36Y11         LUT6 (Prop_lut6_I3_O)        0.097     9.401 r  counter/registerInstance/value[10]_i_3__0/O
+                         net (fo=3, routed)           0.319     9.720    counter/registerInstance/value[10]_i_3__0_n_0
+    SLICE_X36Y8          LUT4 (Prop_lut4_I1_O)        0.097     9.817 r  counter/registerInstance/value[9]_i_1__0/O
+                         net (fo=1, routed)           0.000     9.817    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[9]
+    SLICE_X36Y8          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.193    12.015    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X36Y8          FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[9]/C
+                         clock pessimism              0.311    12.326    
+                         clock uncertainty           -0.035    12.291    
+    SLICE_X36Y8          FDCE (Setup_fdce_C_D)        0.032    12.323    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[9]
+  -------------------------------------------------------------------
+                         required time                         12.323    
+                         arrival time                          -9.817    
+  -------------------------------------------------------------------
+                         slack                                  2.505    
+
+Slack (MET) :             2.804ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.127ns  (logic 1.239ns (24.165%)  route 3.888ns (75.835%))
+  Logic Levels:           8  (LUT4=1 LUT6=7)
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.013ns = ( 12.013 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           1.008     6.837    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.934 r  counter/registerInstance/value[2]_i_14/O
+                         net (fo=1, routed)           0.589     7.522    counter/registerInstance/value[2]_i_14_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I5_O)        0.097     7.619 f  counter/registerInstance/value[2]_i_4__0/O
+                         net (fo=2, routed)           0.310     7.930    counter/registerInstance/value[2]_i_4__0_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.027 f  counter/registerInstance/value[4]_i_3/O
+                         net (fo=3, routed)           0.328     8.355    counter/registerInstance/value[4]_i_3_n_0
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.452 f  counter/registerInstance/value[6]_i_3/O
+                         net (fo=3, routed)           0.233     8.685    counter/registerInstance/value[6]_i_3_n_0
+    SLICE_X39Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.782 f  counter/registerInstance/value[8]_i_3/O
+                         net (fo=3, routed)           0.213     8.995    counter/registerInstance/value[8]_i_3_n_0
+    SLICE_X38Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.092 r  counter/registerInstance/value[10]_i_3/O
+                         net (fo=3, routed)           0.325     9.417    counter/registerInstance/value[10]_i_3_n_0
+    SLICE_X37Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.514 r  counter/registerInstance/value[10]_i_1/O
+                         net (fo=1, routed)           0.000     9.514    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[10]
+    SLICE_X37Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.191    12.013    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[10]/C
+                         clock pessimism              0.311    12.324    
+                         clock uncertainty           -0.035    12.289    
+    SLICE_X37Y11         FDCE (Setup_fdce_C_D)        0.030    12.319    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.319    
+                         arrival time                          -9.514    
+  -------------------------------------------------------------------
+                         slack                                  2.804    
+
+Slack (MET) :             2.808ns  (required time - arrival time)
+  Source:                 counter/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clock125 rise@8.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        5.125ns  (logic 1.239ns (24.175%)  route 3.886ns (75.825%))
+  Logic Levels:           8  (LUT4=2 LUT6=6)
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.013ns = ( 12.013 - 8.000 ) 
+    Source Clock Delay      (SCD):    4.387ns
+    Clock Pessimism Removal (CPR):    0.311ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.409     1.409 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.559     2.968    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.079     3.047 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.340     4.387    counter/registerInstance/CLK
+    SLICE_X42Y8          FDCE                                         r  counter/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y8          FDCE (Prop_fdce_C_Q)         0.361     4.748 f  counter/registerInstance/value_reg[3]/Q
+                         net (fo=113, routed)         0.882     5.630    counter/registerInstance/count[3]
+    SLICE_X41Y6          LUT4 (Prop_lut4_I0_O)        0.199     5.829 r  counter/registerInstance/value[2]_i_24/O
+                         net (fo=6, routed)           1.008     6.837    counter/registerInstance/value[2]_i_24_n_0
+    SLICE_X42Y12         LUT6 (Prop_lut6_I2_O)        0.097     6.934 r  counter/registerInstance/value[2]_i_14/O
+                         net (fo=1, routed)           0.589     7.522    counter/registerInstance/value[2]_i_14_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I5_O)        0.097     7.619 f  counter/registerInstance/value[2]_i_4__0/O
+                         net (fo=2, routed)           0.310     7.930    counter/registerInstance/value[2]_i_4__0_n_0
+    SLICE_X41Y11         LUT6 (Prop_lut6_I0_O)        0.097     8.027 f  counter/registerInstance/value[4]_i_3/O
+                         net (fo=3, routed)           0.328     8.355    counter/registerInstance/value[4]_i_3_n_0
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.452 f  counter/registerInstance/value[6]_i_3/O
+                         net (fo=3, routed)           0.233     8.685    counter/registerInstance/value[6]_i_3_n_0
+    SLICE_X39Y10         LUT6 (Prop_lut6_I2_O)        0.097     8.782 f  counter/registerInstance/value[8]_i_3/O
+                         net (fo=3, routed)           0.213     8.995    counter/registerInstance/value[8]_i_3_n_0
+    SLICE_X38Y11         LUT6 (Prop_lut6_I1_O)        0.097     9.092 r  counter/registerInstance/value[10]_i_3/O
+                         net (fo=3, routed)           0.323     9.415    counter/registerInstance/value[10]_i_3_n_0
+    SLICE_X37Y11         LUT4 (Prop_lut4_I1_O)        0.097     9.512 r  counter/registerInstance/value[9]_i_1/O
+                         net (fo=1, routed)           0.000     9.512    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[9]
+    SLICE_X37Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      8.000     8.000 r  
+    U14                                               0.000     8.000 r  clock (IN)
+                         net (fo=0)                   0.000     8.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         1.341     9.341 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.409    10.750    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.072    10.822 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          1.191    12.013    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[9]/C
+                         clock pessimism              0.311    12.324    
+                         clock uncertainty           -0.035    12.289    
+    SLICE_X37Y11         FDCE (Setup_fdce_C_D)        0.032    12.321    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[9]
+  -------------------------------------------------------------------
+                         required time                         12.321    
+                         arrival time                          -9.512    
+  -------------------------------------------------------------------
+                         slack                                  2.808    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.220ns  (arrival time - required time)
+  Source:                 cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.312ns  (logic 0.186ns (59.557%)  route 0.126ns (40.443%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.086ns
+    Source Clock Delay      (SCD):    1.569ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.588     1.569    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X39Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y10         FDCE (Prop_fdce_C_Q)         0.141     1.710 r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/Q
+                         net (fo=3, routed)           0.126     1.836    counter/registerInstance/value_reg[13]_0[6]
+    SLICE_X39Y10         LUT6 (Prop_lut6_I5_O)        0.045     1.881 r  counter/registerInstance/value[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.881    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[6]
+    SLICE_X39Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.857     2.086    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X39Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]/C
+                         clock pessimism             -0.517     1.569    
+    SLICE_X39Y10         FDCE (Hold_fdce_C_D)         0.092     1.661    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.661    
+                         arrival time                           1.881    
+  -------------------------------------------------------------------
+                         slack                                  0.220    
+
+Slack (MET) :             0.223ns  (arrival time - required time)
+  Source:                 cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.314ns  (logic 0.186ns (59.205%)  route 0.128ns (40.795%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.086ns
+    Source Clock Delay      (SCD):    1.570ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.589     1.570    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X43Y12         FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y12         FDCE (Prop_fdce_C_Q)         0.141     1.711 r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/Q
+                         net (fo=4, routed)           0.128     1.839    counter/registerInstance/Q[2]
+    SLICE_X43Y12         LUT6 (Prop_lut6_I5_O)        0.045     1.884 r  counter/registerInstance/value[2]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.884    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[3]_2[2]
+    SLICE_X43Y12         FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.857     2.086    cordicInstance/rotatorA/accumulatorInstance/registerInstance/CLK
+    SLICE_X43Y12         FDCE                                         r  cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]/C
+                         clock pessimism             -0.516     1.570    
+    SLICE_X43Y12         FDCE (Hold_fdce_C_D)         0.091     1.661    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.661    
+                         arrival time                           1.884    
+  -------------------------------------------------------------------
+                         slack                                  0.223    
+
+Slack (MET) :             0.249ns  (arrival time - required time)
+  Source:                 cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.353ns  (logic 0.186ns (52.708%)  route 0.167ns (47.292%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.088ns
+    Source Clock Delay      (SCD):    1.571ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.590     1.571    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X40Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y11         FDCE (Prop_fdce_C_Q)         0.141     1.712 r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[1]/Q
+                         net (fo=4, routed)           0.167     1.879    counter/registerInstance/value_reg[13]_0[1]
+    SLICE_X41Y11         LUT6 (Prop_lut6_I2_O)        0.045     1.924 r  counter/registerInstance/value[2]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.924    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[2]
+    SLICE_X41Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.859     2.088    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X41Y11         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[2]/C
+                         clock pessimism             -0.504     1.584    
+    SLICE_X41Y11         FDCE (Hold_fdce_C_D)         0.091     1.675    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.675    
+                         arrival time                           1.924    
+  -------------------------------------------------------------------
+                         slack                                  0.249    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 special/isZeroAReg/dataMuxIn_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            special/isZeroAReg/dataMuxIn_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.381ns  (logic 0.209ns (54.854%)  route 0.172ns (45.146%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.085ns
+    Source Clock Delay      (SCD):    1.569ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.588     1.569    special/isZeroAReg/CLK
+    SLICE_X42Y13         FDCE                                         r  special/isZeroAReg/dataMuxIn_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y13         FDCE (Prop_fdce_C_Q)         0.164     1.733 r  special/isZeroAReg/dataMuxIn_reg[0]/Q
+                         net (fo=2, routed)           0.172     1.905    counter/registerInstance/dataMuxIn
+    SLICE_X42Y13         LUT6 (Prop_lut6_I5_O)        0.045     1.950 r  counter/registerInstance/dataMuxIn[0]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.950    special/isZeroAReg/value_reg[1]
+    SLICE_X42Y13         FDCE                                         r  special/isZeroAReg/dataMuxIn_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.856     2.085    special/isZeroAReg/CLK
+    SLICE_X42Y13         FDCE                                         r  special/isZeroAReg/dataMuxIn_reg[0]/C
+                         clock pessimism             -0.516     1.569    
+    SLICE_X42Y13         FDCE (Hold_fdce_C_D)         0.120     1.689    special/isZeroAReg/dataMuxIn_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.689    
+                         arrival time                           1.950    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.186ns (52.794%)  route 0.166ns (47.206%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.089ns
+    Source Clock Delay      (SCD):    1.572ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.591     1.572    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y7          FDCE (Prop_fdce_C_Q)         0.141     1.713 r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/Q
+                         net (fo=4, routed)           0.166     1.879    counter/registerInstance/dataMuxIn_reg[10]_1[7]
+    SLICE_X43Y7          LUT6 (Prop_lut6_I2_O)        0.045     1.924 r  counter/registerInstance/dataMuxIn[7]_i_1/O
+                         net (fo=1, routed)           0.000     1.924    atan2Calculator/atanAccumulator/registerInstance/D[7]
+    SLICE_X43Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.860     2.089    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]/C
+                         clock pessimism             -0.517     1.572    
+    SLICE_X43Y7          FDCE (Hold_fdce_C_D)         0.091     1.663    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.663    
+                         arrival time                           1.924    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.398ns  (logic 0.186ns (46.744%)  route 0.212ns (53.256%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.086ns
+    Source Clock Delay      (SCD):    1.569ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.588     1.569    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y10         FDCE (Prop_fdce_C_Q)         0.141     1.710 r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/Q
+                         net (fo=4, routed)           0.212     1.922    counter/registerInstance/value_reg[13]_0[3]
+    SLICE_X38Y10         LUT6 (Prop_lut6_I2_O)        0.045     1.967 r  counter/registerInstance/value[4]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.967    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[4]
+    SLICE_X38Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.857     2.086    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X38Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[4]/C
+                         clock pessimism             -0.501     1.585    
+    SLICE_X38Y10         FDCE (Hold_fdce_C_D)         0.120     1.705    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.705    
+                         arrival time                           1.967    
+  -------------------------------------------------------------------
+                         slack                                  0.262    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.382ns  (logic 0.209ns (54.667%)  route 0.173ns (45.333%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.089ns
+    Source Clock Delay      (SCD):    1.572ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.591     1.572    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X42Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y7          FDCE (Prop_fdce_C_Q)         0.164     1.736 r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/Q
+                         net (fo=3, routed)           0.173     1.909    counter/registerInstance/dataMuxIn_reg[10]_1[4]
+    SLICE_X42Y7          LUT4 (Prop_lut4_I3_O)        0.045     1.954 r  counter/registerInstance/dataMuxIn[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.954    atan2Calculator/atanAccumulator/registerInstance/D[4]
+    SLICE_X42Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.860     2.089    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X42Y7          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/C
+                         clock pessimism             -0.517     1.572    
+    SLICE_X42Y7          FDCE (Hold_fdce_C_D)         0.120     1.692    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.692    
+                         arrival time                           1.954    
+  -------------------------------------------------------------------
+                         slack                                  0.262    
+
+Slack (MET) :             0.271ns  (arrival time - required time)
+  Source:                 atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.362ns  (logic 0.186ns (51.350%)  route 0.176ns (48.650%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.089ns
+    Source Clock Delay      (SCD):    1.572ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.591     1.572    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y9          FDCE (Prop_fdce_C_Q)         0.141     1.713 r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/Q
+                         net (fo=3, routed)           0.176     1.889    counter/registerInstance/dataMuxIn_reg[10]_1[10]
+    SLICE_X43Y9          LUT5 (Prop_lut5_I4_O)        0.045     1.934 r  counter/registerInstance/dataMuxIn[10]_i_1/O
+                         net (fo=1, routed)           0.000     1.934    atan2Calculator/atanAccumulator/registerInstance/D[10]
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.860     2.089    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+                         clock pessimism             -0.517     1.572    
+    SLICE_X43Y9          FDCE (Hold_fdce_C_D)         0.091     1.663    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.663    
+                         arrival time                           1.934    
+  -------------------------------------------------------------------
+                         slack                                  0.271    
+
+Slack (MET) :             0.272ns  (arrival time - required time)
+  Source:                 atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.186ns (51.068%)  route 0.178ns (48.932%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.089ns
+    Source Clock Delay      (SCD):    1.572ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.591     1.572    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y9          FDCE (Prop_fdce_C_Q)         0.141     1.713 r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/Q
+                         net (fo=3, routed)           0.178     1.891    atan2Calculator/atanAccumulator/registerInstance/Q[10]
+    SLICE_X43Y9          LUT6 (Prop_lut6_I2_O)        0.045     1.936 r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn[11]_i_2/O
+                         net (fo=1, routed)           0.000     1.936    atan2Calculator/atanAccumulator/registerInstance/data[11]
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.860     2.089    atan2Calculator/atanAccumulator/registerInstance/CLK
+    SLICE_X43Y9          FDCE                                         r  atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]/C
+                         clock pessimism             -0.517     1.572    
+    SLICE_X43Y9          FDCE (Hold_fdce_C_D)         0.092     1.664    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.936    
+  -------------------------------------------------------------------
+                         slack                                  0.272    
+
+Slack (MET) :             0.273ns  (arrival time - required time)
+  Source:                 cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clock125  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clock125
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clock125 rise@0.000ns - clock125 rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.186ns (51.166%)  route 0.178ns (48.834%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.086ns
+    Source Clock Delay      (SCD):    1.569ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.328     0.328 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.955    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.981 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.588     1.569    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y10         FDCE (Prop_fdce_C_Q)         0.141     1.710 r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/Q
+                         net (fo=4, routed)           0.178     1.887    counter/registerInstance/value_reg[13]_0[3]
+    SLICE_X37Y10         LUT4 (Prop_lut4_I2_O)        0.045     1.932 r  counter/registerInstance/value[3]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.932    cordicInstance/rotatorB/accumulatorInstance/registerInstance/D[3]
+    SLICE_X37Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock125 rise edge)
+                                                      0.000     0.000 r  
+    U14                                               0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    U14                  IBUF (Prop_ibuf_I_O)         0.517     0.517 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.200    clock_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.229 r  clock_IBUF_BUFG_inst/O
+                         net (fo=45, routed)          0.857     2.086    cordicInstance/rotatorB/accumulatorInstance/registerInstance/CLK
+    SLICE_X37Y10         FDCE                                         r  cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]/C
+                         clock pessimism             -0.517     1.569    
+    SLICE_X37Y10         FDCE (Hold_fdce_C_D)         0.091     1.660    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.660    
+                         arrival time                           1.932    
+  -------------------------------------------------------------------
+                         slack                                  0.273    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clock125
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { clock }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            1.592         8.000       6.408      BUFGCTRL_X0Y0  clock_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X41Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[0]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y9    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y9    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y5    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[2]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[3]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X42Y7    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[5]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[6]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X41Y12   cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X36Y8    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[10]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X36Y7    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[11]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X36Y8    cordicInstance/rotatorA/accumulatorInstance/registerInstance/value_reg[9]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X40Y11   cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X37Y7    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[11]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X37Y7    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[12]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X37Y7    cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[13]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X40Y11   cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[1]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X41Y11   cordicInstance/rotatorB/accumulatorInstance/registerInstance/value_reg[2]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X41Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y9    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[10]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y9    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[11]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y5    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[1]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[2]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[3]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X42Y7    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[4]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[5]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y6    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[6]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y7    atan2Calculator/atanAccumulator/registerInstance/dataMuxIn_reg[8]/C
+
+
+

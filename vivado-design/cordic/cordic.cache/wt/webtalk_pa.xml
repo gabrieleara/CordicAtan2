@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Jun 27 16:41:17 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="dd5fcf254c6845d39f06f098e53ee2f1" type="ProjectID"/>
+<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="CloseDesign" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenDesign" value="1" type="JavaHandler"/>
+<property name="OpenExistingReport" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="PowerConstraintsWizard" value="1" type="JavaHandler"/>
+<property name="ProjectSummary" value="2" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="8" type="JavaHandler"/>
+<property name="ReportUtilization" value="4" type="JavaHandler"/>
+<property name="RunImplementation" value="2" type="JavaHandler"/>
+<property name="RunPowerEstimation" value="3" type="JavaHandler"/>
+<property name="RunSchematic" value="2" type="JavaHandler"/>
+<property name="RunSynthesis" value="8" type="JavaHandler"/>
+<property name="SaveDesign" value="4" type="JavaHandler"/>
+<property name="ShowPowerEstimation" value="3" type="JavaHandler"/>
+<property name="ShowView" value="10" type="JavaHandler"/>
+<property name="ToolsSettings" value="1" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="2" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="2" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="8" type="JavaHandler"/>
+<property name="XdcCreateClock" value="1" type="JavaHandler"/>
+<property name="XdcSetInputDelay" value="1" type="JavaHandler"/>
+<property name="ZoomFit" value="2" type="JavaHandler"/>
+<property name="ZoomIn" value="19" type="JavaHandler"/>
+<property name="ZoomOut" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_CANCEL" value="5" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="48" type="GuiResourceData"/>
+<property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="ClockCreationPanel_CLOCK_NAME" value="5" type="GuiResourceData"/>
+<property name="ClockCreationPanel_ENTER_POSITIVE_NUMBER" value="10" type="GuiResourceData"/>
+<property name="ClosePlanner_YES" value="4" type="GuiResourceData"/>
+<property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiResourceData"/>
+<property name="DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK" value="1" type="GuiResourceData"/>
+<property name="EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE" value="10" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="3" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="57" type="GuiResourceData"/>
+<property name="GetObjectsDialog_FIND" value="3" type="GuiResourceData"/>
+<property name="GetObjectsDialog_SPECIFY_OF_OBJECTS_OPTION" value="1" type="GuiResourceData"/>
+<property name="GetObjectsPanel_SET" value="2" type="GuiResourceData"/>
+<property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
+<property name="HDualList_FIND_RESULTS" value="4" type="GuiResourceData"/>
+<property name="HDualList_MOVE_SELECTED_ITEMS_TO_RIGHT" value="3" type="GuiResourceData"/>
+<property name="IODelayCreationPanel_DELAY_VALUE" value="2" type="GuiResourceData"/>
+<property name="IODelayCreationPanel_SPECIFY_CLOCK_PIN_OR_PORT" value="1" type="GuiResourceData"/>
+<property name="IODelayCreationPanel_SPECIFY_LIST_OF_PORTS" value="1" type="GuiResourceData"/>
+<property name="MainToolbarMgr_RUN" value="1" type="GuiResourceData"/>
+<property name="MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT" value="2" type="GuiResourceData"/>
+<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiResourceData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="4" type="GuiResourceData"/>
+<property name="NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE" value="17" type="GuiResourceData"/>
+<property name="NetlistTreeView_NETLIST_TREE" value="114" type="GuiResourceData"/>
+<property name="NumJobsChooser_NUMBER_OF_JOBS" value="1" type="GuiResourceData"/>
+<property name="OpenDesignDialog_DESIGN_NAME" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_IMPL_DESIGN" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_GOTO_NETLIST_DESIGN" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_RTL_DESIGN" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_PROJECT_SUMMARY" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_SYNTHESIS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_SAVE_DESIGN" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_SYNTH_SETTINGS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_ZOOM_FIT" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_ZOOM_IN" value="16" type="GuiResourceData"/>
+<property name="PACommandNames_ZOOM_OUT" value="1" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="3" type="GuiResourceData"/>
+<property name="PAViews_DEVICE" value="1" type="GuiResourceData"/>
+<property name="PAViews_SCHEMATIC" value="2" type="GuiResourceData"/>
+<property name="PartChooser_PARTS" value="1" type="GuiResourceData"/>
+<property name="PowerResultSummaryPanel_CLICK_FOR_MORE_DETAILS" value="1" type="GuiResourceData"/>
+<property name="PowerResultTab_REPORT_NAVIGATION_TREE" value="6" type="GuiResourceData"/>
+<property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiResourceData"/>
+<property name="ProjectNameChooser_CREATE_PROJECT_SUBDIRECTORY" value="2" type="GuiResourceData"/>
+<property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
+<property name="ProjectSummaryDRCPanel_OPEN_DRC_REPORT" value="1" type="GuiResourceData"/>
+<property name="ProjectTab_CLOSE_DESIGN" value="1" type="GuiResourceData"/>
+<property name="ReportUtilizationDialog_RESULTS_NAME" value="1" type="GuiResourceData"/>
+<property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="2" type="GuiResourceData"/>
+<property name="SaveProjectUtils_DONT_SAVE" value="1" type="GuiResourceData"/>
+<property name="SaveProjectUtils_SAVE" value="3" type="GuiResourceData"/>
+<property name="SchematicView_REMOVE" value="1" type="GuiResourceData"/>
+<property name="SdcGetObjectsPanel_SPECIFY_CLOCK_SOURCE_OBJECTS" value="2" type="GuiResourceData"/>
+<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="13" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_DIRECTORIES" value="2" type="GuiResourceData"/>
+<property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="2" type="GuiResourceData"/>
+<property name="TimingDialogUtils_RESULTS_NAME" value="1" type="GuiResourceData"/>
+<property name="TimingItemFlatTablePanel_TABLE" value="1" type="GuiResourceData"/>
+<property name="UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)" value="7" type="GuiResourceData"/>
+<property name="XPowerSettingsDialog_SAVE_THESE_SETTINGS_AND_RUN" value="3" type="GuiResourceData"/>
+<property name="XdcCategoryTree_XDC_CATEGORY_TREE" value="17" type="GuiResourceData"/>
+<property name="XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS" value="2" type="GuiResourceData"/>
+</item>
+</section>
+</application>
+</document>

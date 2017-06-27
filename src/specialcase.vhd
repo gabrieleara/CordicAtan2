@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 --------------------------------------------------------------------------------
--- Special Case detector
+-- Special Case Detector
 --
 -- This component checks for the special cases specified by the CORDICAtan2
 -- algorithm and pilots the Atan2 component via the enable signal.

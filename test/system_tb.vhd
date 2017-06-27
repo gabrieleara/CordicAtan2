@@ -22,7 +22,8 @@ architecture System_TB_Arch of System_TB is
 	constant LUT_SIZE		: positive := 11;
 	constant TEST_SIZE		: positive := 1000;
 
-	type word_array			is array (natural range <>) of std_ulogic_vector(SIZE-1 downto 0);
+	type word_array			is array (natural range <>) of
+        std_ulogic_vector(SIZE-1 downto 0);
 
 	signal test_inA			: std_ulogic_vector(SIZE-1 downto 0);
 	signal test_inB			: std_ulogic_vector(SIZE-1 downto 0);

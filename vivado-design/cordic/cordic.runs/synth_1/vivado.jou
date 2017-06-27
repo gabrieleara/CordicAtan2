@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jun 27 16:41:22 2017
+# Process ID: 4692
+# Current directory: E:/ProjectCordic/vivado-design/cordic/cordic.runs/synth_1
+# Command line: vivado.exe -log CORDICAtan2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CORDICAtan2.tcl
+# Log file: E:/ProjectCordic/vivado-design/cordic/cordic.runs/synth_1/CORDICAtan2.vds
+# Journal file: E:/ProjectCordic/vivado-design/cordic/cordic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CORDICAtan2.tcl -notrace
