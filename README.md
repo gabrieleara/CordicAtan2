@@ -26,4 +26,4 @@ The same list can be found also in the [contributors](./../../contributors) of t
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
+This project is licensed under the GNU GPL 3.0 License - see the [LICENSE](./LICENSE) file for details
